@@ -1,4 +1,11 @@
 Graphicbaseball::Application.routes.draw do
+  root to: 'pages#home'
+
+  match '/mlb2012', to: 'pages#mlb2012'
+  match '/chart', to: 'pages#chart'
+  resources :standing12s
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

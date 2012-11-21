@@ -1,0 +1,21 @@
+<h1>Listing standing12s</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @standing12s.each do |standing12| %>
+  <tr>
+    <td><%= link_to 'Show', standing12 %></td>
+    <td><%= link_to 'Edit', edit_standing12_path(standing12) %></td>
+    <td><%= link_to 'Destroy', standing12, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Standing12', new_standing12_path %>

@@ -1,0 +1,26 @@
+<h1>Chart</h1>
+
+<div id="chart" style="height: 400px"></div>​
+<script type="text/javascript">
+
+
+
+$(function() {
+	var chart = new Highcharts.Chart({
+		chart: {
+			renderTo: 'chart'
+		},
+		xAxis: {
+			categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+		},
+		plotOptions: {
+			series: {
+				animation: false
+			}
+		}, 
+		series: [{data: [30, 72, 105, 130, 145, 160]}]
+
+	});
+
+});
+</script>
