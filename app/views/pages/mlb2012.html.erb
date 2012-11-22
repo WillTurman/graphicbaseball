@@ -1,23 +1,59 @@
-<h1 class="graph"><a href="/">Graphic Baseball</a> | <%= @title %></h1>
-<p class="league">National League</p>
-<p class="league" style="margin-left: 10.5%;">American League</p>
-<p class="league" style="margin-left: 12%; background: #FFF">Toggle series by clicking on teams in legend.</p>
-<p class="league" style="margin-left: 15.5%;">Select Year</p>
-
-<form class="buttonform">
-	<input type="button" id="nlwest" value="West" />
-	<input type="button" id="nlcent" value="Central" />
-	<input type="button" id="nleast" value="East" />
-	<input type="button" id="nlwildcard" value="Wildcard"/>
-	<input type="button" id="alwest" value="West" />
-	<input type="button" id="alcent" value="Central" />
-	<input type="button" id="aleast" value="East" />
-	<input type="button" id="alwildcard" value="Wildcard"
-	<input type="button" id="custom" value="Custom" />
+<div class="row">
+	<div class="span3 offset1">
+		 <span class="label label-important">National League</span>
+	</div>
+	<div class="span3">
+		 <span class="label label-info">American League</span>
+	</div>
 	
-</form>
+</div>
 
-<div id= "standings" style="width: 1200px; height: 460px;" ></div>
+
+
+<div class="row">
+	<div class="span3 offset1">
+		<div class="btn-toolbar">
+			<form class="buttonform">
+				<div class="btn-group">
+		  			<input class="btn btn-small" type="button" id="nlwest" value="West" />
+					<input class="btn btn-small" type="button" id="nlcent" value="Central" />
+					<input class="btn btn-small" type="button" id="nleast" value="East" />
+					<input class="btn btn-small" type="button" id="nlwildcard" value="Wildcard"/>
+		  		</div>
+		  	</form>
+		</div>
+	</div>
+	<div class="span3">
+		<div class="btn-toolbar"
+			<form class="buttonform">
+		  		<div class="btn-group">
+					<input class="btn btn-small" type="button" id="alwest" value="West" />
+					<input class="btn btn-small" type="button" id="alcent" value="Central" />
+					<input class="btn btn-small" type="button" id="aleast" value="East" />
+					<input class="btn btn-small" type="button" id="alwildcard" value="Wildcard"/>
+				</div>
+			</form>
+
+					
+					<!--<select id="standinglist">
+				<option selected = "selected" value="http://charts.graphicbaseball.com/mlb2012standings">2012</option>
+				<option value="http://charts.graphicbaseball.com/mlb2011standings">2011</option>
+				<option value="http://charts.graphicbaseball.com/mlb2010standings">2010</option>
+				<option value="http://charts.graphicbaseball.com/mlb2009standings">2009</option>
+			</select>-->
+		</div>
+	</div>
+	<div class="span1">
+		<div class="btn-toolbar">
+			<form class="buttonform">
+				<div class="btn-group">
+		  			<input class="btn btn-small" type="button" id="custom" value="Custom" />
+		  		</div>
+		  	</form>
+		</div>
+	</div>
+</div>
+<div class="" id= "standings" style="width: 1200px; height: 525px;" ></div>
 
 <script type="text/javascript">
 	var standingselect=document.getElementById("standinglist")
@@ -32,14 +68,14 @@
  		// +++++++++++++++++++ ALL MLB +++++++++++++++++++ 
  		$(function() {
  		new Highcharts.Chart({
- 		title: { text: "2012 MLB Team Standings Comparison" },
+ 		title: { text: null },
  		chart: { renderTo: "standings" },
  		plotOptions: {
  			series: {
 				animation: false
 			},
  			line : { pointInterval:  <%= 1.day * 1000 %>,
- 				  	 pointStart:  Date.UTC(2012, 3, 2),
+ 				  	 pointStart:  Date.UTC(2012, 2, 28),
  				     marker: { symbol: 'circle',
            					   radius: 3, },
         			 visible: false
@@ -291,14 +327,14 @@
  		$('#nlwest').click(function(e) {
  		e.preventDefault();
  		var chart = new Highcharts.Chart({
-		title: { text: "2012 National League West Division Race" },
+		title: { text: null },		
 		chart: { renderTo: "standings" },
  		plotOptions: {
  			series: {
 				animation: false
 			},
  			line : { pointInterval:  <%= 1.day * 1000 %>,
- 				  	 pointStart:  Date.UTC(2012, 3, 2),
+ 				  	 pointStart:  Date.UTC(2012, 2, 28),
  				     marker: { symbol: 'circle',
            					   radius: 3, },
         visible: false
@@ -549,14 +585,14 @@
  		$('#nlcent').click(function(e) {
  		e.preventDefault();
  		var chart = new Highcharts.Chart({
-		title: { text: "2012 National League Central Division Race" },
+		title: { text: null },		
 		chart: { renderTo: "standings" },
  		plotOptions: {
  			series: {
 				animation: false
 			},
  			line : { pointInterval:  <%= 1.day * 1000 %>,
- 				  	 pointStart:  Date.UTC(2012, 3, 2),
+ 				  	 pointStart:  Date.UTC(2012, 2, 28),
  				     marker: { symbol: 'circle',
            					   radius: 3, },
         	visible: false
@@ -809,14 +845,14 @@
  		$('#nleast').click(function(e) {
  		e.preventDefault();
  		var chart = new Highcharts.Chart({
- 		title: { text: "2012 National League East Division Race" },
+		title: { text: null },		
  		chart: { renderTo: "standings" },
  		plotOptions: {
  			series: {
 				animation: false
 			},
  			line : { pointInterval:  <%= 1.day * 1000 %>,
- 				  	 pointStart:  Date.UTC(2012, 3, 2),
+ 				  	 pointStart:  Date.UTC(2012, 2, 28),
  				     marker: { symbol: 'circle',
            					   radius: 3, },
         			 visible: false
@@ -1070,14 +1106,14 @@
  		$('#alwest').click(function(e) {
  		e.preventDefault();
  		var chart = new Highcharts.Chart({
- 		title: { text: "2012 American League West Division Race" },
+		title: { text: null },		
  		chart: { renderTo: "standings" },
  		plotOptions: {
  			series: {
 				animation: false
 			},
  			line : { pointInterval:  <%= 1.day * 1000 %>,
- 				  	 pointStart:  Date.UTC(2012, 3, 2),
+ 				  	 pointStart:  Date.UTC(2012, 2, 28),
  				     marker: { symbol: 'circle',
            					   radius: 3, },
         			 visible: false
@@ -1330,14 +1366,14 @@
  		$('#alcent').click(function(e) {
  		e.preventDefault();
  		var chart = new Highcharts.Chart({
- 		title: { text: "2012 American League Central Division Race" },
+		title: { text: null },		
  		chart: { renderTo: "standings" },
  		plotOptions: {
  			series: {
 				animation: false
 			},
  			line : { pointInterval:  <%= 1.day * 1000 %>,
- 				  	 pointStart:  Date.UTC(2012, 3, 2),
+ 				  	 pointStart:  Date.UTC(2012, 2, 28),
  				     marker: { symbol: 'circle',
            					   radius: 3, },
         			 visible: false
@@ -1591,14 +1627,14 @@
  		$('#aleast').click(function(e) {
  		e.preventDefault();
  		var chart = new Highcharts.Chart({
- 		title: { text: "2012 American League East Division Race" },
+		title: { text: null },		
  		chart: { renderTo: "standings" },
  		plotOptions: {
  			series: {
 				animation: false
 			},
  			line : { pointInterval:  <%= 1.day * 1000 %>,
- 				  	 pointStart:  Date.UTC(2012, 3, 2),
+ 				  	 pointStart:  Date.UTC(2012, 2, 28),
  				     marker: { symbol: 'circle',
            					   radius: 3, },
         			 visible: false
@@ -1851,14 +1887,14 @@
  		$('#custom').click(function(e) {
  		e.preventDefault();
  		var chart = new Highcharts.Chart({
- 		title: { text: "2012 MLB Team Standings Custom Comparison" },
+		title: { text: null },		
  		chart: { renderTo: "standings" },
  		plotOptions: {
  			series: {
 				animation: false
 			},
  			line : { pointInterval:  <%= 1.day * 1000 %>,
- 				  	 pointStart:  Date.UTC(2012, 3, 2),
+ 				  	 pointStart:  Date.UTC(2012, 2, 28),
  				     marker: { symbol: 'circle',
            					   radius: 3, },
         			 visible: false
@@ -2105,14 +2141,14 @@
 	$('#nlwildcard').click(function(e) {
  		e.preventDefault();
  		var chart = new Highcharts.Chart({
-		title: { text: "2012 National League Wildcard Race" },
+		title: { text: null },		
 		chart: { renderTo: "standings" },
  		plotOptions: {
  			series: {
 				animation: false
 			},
  			line : { pointInterval:  <%= 1.day * 1000 %>,
- 				  	 pointStart:  Date.UTC(2012, 3, 2),
+ 				  	 pointStart:  Date.UTC(2012, 2, 28),
  				     marker: { symbol: 'circle',
            					   radius: 3, },
         visible: false
@@ -2368,14 +2404,14 @@
  		$('#alwildcard').click(function(e) {
  		e.preventDefault();
  		var chart = new Highcharts.Chart({
- 		title: { text: "2012 American League Wildcard Race" },
+		title: { text: null },		
  		chart: { renderTo: "standings" },
  		plotOptions: {
  			series: {
 				animation: false
 			},
  			line : { pointInterval:  <%= 1.day * 1000 %>,
- 				  	 pointStart:  Date.UTC(2012, 3, 2),
+ 				  	 pointStart:  Date.UTC(2012, 2, 28),
  				     marker: { symbol: 'circle',
            					   radius: 3, },
         			 visible: false
