@@ -1,10 +1,12 @@
 ---
+favicon.ico: favicon-f4e7c63a8ab712703e2b877fad44a921.ico
+favicon/index.ico: favicon-f4e7c63a8ab712703e2b877fad44a921.ico
 rails.png: rails-e19cc14e7b458337c25b4a0b230d6cac.png
 rails/index.png: rails-e19cc14e7b458337c25b4a0b230d6cac.png
-application.js: application-db7409ed286f4dbafda006e785e37155.js
-application/index.js: application-db7409ed286f4dbafda006e785e37155.js
-application.css: application-177053890bd1ac9fffc0d6bf5594612a.css
-application/index.css: application-177053890bd1ac9fffc0d6bf5594612a.css
+application.js: application-df98a20043d0e0f44b7df74c2f473f7c.js
+application/index.js: application-df98a20043d0e0f44b7df74c2f473f7c.js
+application.css: application-897220662a10f90ff290ceac159029f1.css
+application/index.css: application-897220662a10f90ff290ceac159029f1.css
 fontawesome-webfont.eot: fontawesome-webfont-5f9bf001d945baa3287193f70ac71c68.eot
 fontawesome-webfont/index.eot: fontawesome-webfont-5f9bf001d945baa3287193f70ac71c68.eot
 fontawesome-webfont.svg: fontawesome-webfont-9c8b49b9721b8663e25842f77bd78bd9.svg
