@@ -3,6 +3,11 @@ Graphicbaseball::Application.routes.draw do
 
   match '/mlb2012', to: 'pages#mlb2012'
   match '/mlb2011', to: 'pages#mlb2011'
+  match '/mlb2010', to: 'pages#mlb2010'
+  match '/mlb2009', to: 'pages#mlb2009'
+  match '/mlb2008', to: 'pages#mlb2008'
+
+
   match '/chart', to: 'pages#chart'
   resources :standing12s
 

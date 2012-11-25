@@ -1,8 +1,8 @@
 # == Schema Information
 #
-# Table name: standing11s
+# Table name: standing08s
 #
-#  id           :integer          primary key
+#  id           :integer          not null, primary key
 #  arizona      :integer
 #  atlanta      :integer
 #  baltimore    :integer
@@ -35,14 +35,8 @@
 #  washington   :integer
 #
 
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+class Standing08 < ActiveRecord::Base
+  # attr_accessible :title, :body
+   attr_accessible :id, :arizona, :atlanta, :baltimore, :boston, :chicagocubs, :chicagosox, :cincinnati, :cleveland, :colorado, :detroit, :florida, :houston, :kansascity, :laangels, :ladodgers, :milwaukee, :minnesota, :nymets, :nyyankees, :oakland, :philadelphia, :pittsburgh, :sandiego, :sanfrancisco, :seattle, :stlouis, :tampabay, :texas, :toronto, :washington  
 
-# This model initially had no columns defined.  If you add columns to the
-# model remove the '{}' from the fixture names and add the columns immediately
-# below each fixture, per the syntax in the comments below
-#
-one: {}
-# column: value
-#
-two: {}
-#  column: value
+end

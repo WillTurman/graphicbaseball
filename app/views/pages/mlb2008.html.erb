@@ -75,7 +75,7 @@
                         animation: false
                   },
                   line : { pointInterval:  <%= 1.day * 1000 %>,
-                               pointStart:  Date.UTC(2011, 3, 1),
+                               pointStart:  Date.UTC(2008, 2, 26),
                              marker: { symbol: 'circle',
                                        radius: 3, },
                          visible: false
@@ -108,56 +108,56 @@
                         name: "Arizona",
                         legendIndex : 1,
                         visible: true,
-                        data: <%= Standing11.select("arizona").map {|a| a[:arizona]}.inspect %>,
+                        data: <%= Standing08.select("arizona").map {|a| a[:arizona]}.inspect %>,
                         color: '#A10028'
                         }, 
                         
                         {
                         name: "Atlanta",
                         legendIndex : 2,
-                        data: <%= Standing11.select("atlanta").map {|a| a[:atlanta]}.inspect %>,
+                        data: <%= Standing08.select("atlanta").map {|a| a[:atlanta]}.inspect %>,
                         color: '#A10028'
                         },
                         
                         {
                         name: "Baltimore",
                         legendIndex : 3,
-                        data: <%= Standing11.select("baltimore").map {|a| a[:baltimore]}.inspect %>,
+                        data: <%= Standing08.select("baltimore").map {|a| a[:baltimore]}.inspect %>,
                         color: '#FFA200'
                         },
                         
                         {
                         name: "Boston",
                         legendIndex : 4,
-                        data: <%= Standing11.select("boston").map {|a| a[:boston]}.inspect %>,
+                        data: <%= Standing08.select("boston").map {|a| a[:boston]}.inspect %>,
                         color: '#9C001D'
                         }, 
                         
                         {
                         name: "Chicago Cubs",
                         legendIndex : 5,
-                        data: <%= Standing11.select("chicagocubs").map {|a| a[:chicagocubs]}.inspect %>,
+                        data: <%= Standing08.select("chicagocubs").map {|a| a[:chicagocubs]}.inspect %>,
                         color: '#3672FF'
                         }, 
                         
                         {
                         name: "Chicago Sox",
                         legendIndex : 6,
-                        data: <%= Standing11.select("chicagosox").map {|a| a[:chicagosox]}.inspect %>,
+                        data: <%= Standing08.select("chicagosox").map {|a| a[:chicagosox]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Cincinnati",
                         legendIndex : 7,
-                        data: <%= Standing11.select("cincinnati").map {|a| a[:cincinnati]}.inspect %>,
+                        data: <%= Standing08.select("cincinnati").map {|a| a[:cincinnati]}.inspect %>,
                         color: '#CC0018',
                         }, 
                         
                         {
                         name: "Cleveland",
                         legendIndex : 8,
-                        data: <%= Standing11.select("cleveland").map {|a| a[:cleveland]}.inspect %>,
+                        data: <%= Standing08.select("cleveland").map {|a| a[:cleveland]}.inspect %>,
                         color: '#004175',
                         }, 
                         
@@ -165,42 +165,42 @@
                         name: "Colorado",
                         legendIndex : 9,
                         visible: true,
-                        data: <%= Standing11.select("colorado").map {|a| a[:colorado]}.inspect %>,
+                        data: <%= Standing08.select("colorado").map {|a| a[:colorado]}.inspect %>,
                         color: '#7B0C91',
                         },
                         
                         {
                         name: "Detroit",
                         legendIndex : 10,
-                        data: <%= Standing11.select("detroit").map {|a| a[:detroit]}.inspect %>,
+                        data: <%= Standing08.select("detroit").map {|a| a[:detroit]}.inspect %>,
                         color: '#FFA200'  
                         },
                         
                         {
                         name: "Florida",
                         legendIndex : 11,
-                        data: <%= Standing11.select("florida").map {|a| a[:florida]}.inspect %>,
+                        data: <%= Standing08.select("florida").map {|a| a[:florida]}.inspect %>,
                         color: '#00C3D9'
                         }, 
                         
                         {
                         name: "Houston",
                         legendIndex : 12,
-                        data: <%= Standing11.select("houston").map {|a| a[:houston]}.inspect %>,
+                        data: <%= Standing08.select("houston").map {|a| a[:houston]}.inspect %>,
                         color: '#FF9500'  
                         },
                         
                         {
                         name: "Kansas City",
                         legendIndex : 13,
-                        data: <%= Standing11.select("kansascity").map {|a| a[:kansascity]}.inspect %>,
+                        data: <%= Standing08.select("kansascity").map {|a| a[:kansascity]}.inspect %>,
                         color: '#3A94DE'
                         }, 
                         
                         {
                         name: "LA Angels",
                         legendIndex : 14,
-                        data: <%= Standing11.select("laangels").map {|a| a[:laangels]}.inspect %>,
+                        data: <%= Standing08.select("laangels").map {|a| a[:laangels]}.inspect %>,
                         color: '#FF002F'
                         }, 
                         
@@ -208,63 +208,63 @@
                         name: "LA Dodgers",
                         legendIndex : 15,
                         visible: true,
-                        data: <%= Standing11.select("ladodgers").map {|a| a[:ladodgers]}.inspect %>,
+                        data: <%= Standing08.select("ladodgers").map {|a| a[:ladodgers]}.inspect %>,
                         color: '#163591'
                         }, 
                         
                         {
                         name: "Milwaukee",
                         legendIndex : 16,
-                        data: <%= Standing11.select("milwaukee").map {|a| a[:milwaukee]}.inspect %>,
+                        data: <%= Standing08.select("milwaukee").map {|a| a[:milwaukee]}.inspect %>,
                         color: '#407AB8'
                         }, 
                         
                         {
                         name: "Minnesota",
                         legendIndex : 17,
-                        data: <%= Standing11.select("minnesota").map {|a| a[:minnesota]}.inspect %>,
+                        data: <%= Standing08.select("minnesota").map {|a| a[:minnesota]}.inspect %>,
                         color: '#9C001D'
                         },
                         
                         {
                         name: "NY Mets",
                         legendIndex : 18,
-                        data: <%= Standing11.select("nymets").map {|a| a[:nymets]}.inspect %>,
+                        data: <%= Standing08.select("nymets").map {|a| a[:nymets]}.inspect %>,
                         color: '#0097F5'
                         },
                         
                         {
                         name: "NY Yankees",
                         legendIndex : 19,
-                        data: <%= Standing11.select("nyyankees").map {|a| a[:nyyankees]}.inspect %>,
+                        data: <%= Standing08.select("nyyankees").map {|a| a[:nyyankees]}.inspect %>,
                         color: '#004175'
                         },
                         
                         {
                         name: "Oakland",
                         legendIndex : 20,
-                        data: <%= Standing11.select("oakland").map {|a| a[:oakland]}.inspect %>,
+                        data: <%= Standing08.select("oakland").map {|a| a[:oakland]}.inspect %>,
                         color: '#00731B',
                         }, 
                         
                         {
                         name: "Philadelphia",
                         legendIndex : 21,
-                        data: <%= Standing11.select("philadelphia").map {|a| a[:philadelphia]}.inspect %>,
+                        data: <%= Standing08.select("philadelphia").map {|a| a[:philadelphia]}.inspect %>,
                         color: '#FC0F7E'
                         }, 
                         
                         {
                         name: "Pittsburgh",
                         legendIndex : 22,
-                        data: <%= Standing11.select("pittsburgh").map {|a| a[:pittsburgh]}.inspect %>,
+                        data: <%= Standing08.select("pittsburgh").map {|a| a[:pittsburgh]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Seattle",
                         legendIndex : 23,
-                        data: <%= Standing11.select("seattle").map {|a| a[:seattle]}.inspect %>,
+                        data: <%= Standing08.select("seattle").map {|a| a[:seattle]}.inspect %>,
                         color: '#009FBF'
                         }, 
                         
@@ -272,7 +272,7 @@
                         name: "San Diego",
                         legendIndex : 24,
                         visible: true,
-                        data: <%= Standing11.select("sandiego").map {|a| a[:sandiego]}.inspect %>,
+                        data: <%= Standing08.select("sandiego").map {|a| a[:sandiego]}.inspect %>,
                         color: '#838579'
                         }, 
                         
@@ -280,42 +280,42 @@
                         name: "San Francisco",
                         legendIndex : 25,
                         visible: true,
-                        data: <%= Standing11.select("sanfrancisco").map {|a| a[:sanfrancisco]}.inspect %>,
+                        data: <%= Standing08.select("sanfrancisco").map {|a| a[:sanfrancisco]}.inspect %>,
                         color: '#FF9500'
                         },
                         
                         {
                         name: "St. Louis",
                         legendIndex : 26,
-                        data: <%= Standing11.select("stlouis").map {|a| a[:stlouis]}.inspect %>,
+                        data: <%= Standing08.select("stlouis").map {|a| a[:stlouis]}.inspect %>,
                         color: '#87C0E6'
                         },
                         
                         {
                         name: "Tampa Bay",
                         legendIndex : 27,
-                        data: <%= Standing11.select("tampabay").map {|a| a[:tampabay]}.inspect %>,
+                        data: <%= Standing08.select("tampabay").map {|a| a[:tampabay]}.inspect %>,
                         color: '#3A94DE'
                         }, 
                         
                         {
                         name: "Texas",
                         legendIndex : 28,
-                        data: <%= Standing11.select("texas").map {|a| a[:texas]}.inspect %>,
+                        data: <%= Standing08.select("texas").map {|a| a[:texas]}.inspect %>,
                         color: '#008CFF'
                         },
                         
                         {
                         name: "Toronto",
                         legendIndex : 29,
-                        data: <%= Standing11.select("toronto").map {|a| a[:toronto]}.inspect %>,
+                        data: <%= Standing08.select("toronto").map {|a| a[:toronto]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Washington",
                         legendIndex : 30,
-                        data: <%= Standing11.select("washington").map {|a| a[:washington]}.inspect %>,
+                        data: <%= Standing08.select("washington").map {|a| a[:washington]}.inspect %>,
                         color: '#324B94'
                   }]
             
@@ -334,7 +334,7 @@
                         animation: false
                   },
                   line : { pointInterval:  <%= 1.day * 1000 %>,
-                               pointStart:  Date.UTC(2011, 3, 1),
+                               pointStart:  Date.UTC(2008, 2, 26),
                              marker: { symbol: 'circle',
                                        radius: 3, },
         visible: false
@@ -367,56 +367,56 @@
                         name: "Arizona",
                         legendIndex : 1,
                         visible: true,
-                        data: <%= Standing11.select("arizona").map {|a| a[:arizona]}.inspect %>,
+                        data: <%= Standing08.select("arizona").map {|a| a[:arizona]}.inspect %>,
                         color: '#A10028'
                         }, 
                         
                         {
                         name: "Atlanta",
                         legendIndex : 2,
-                        data: <%= Standing11.select("atlanta").map {|a| a[:atlanta]}.inspect %>,
+                        data: <%= Standing08.select("atlanta").map {|a| a[:atlanta]}.inspect %>,
                         color: '#A10028'
                         },
                         
                         {
                         name: "Baltimore",
                         legendIndex : 3,
-                        data: <%= Standing11.select("baltimore").map {|a| a[:baltimore]}.inspect %>,
+                        data: <%= Standing08.select("baltimore").map {|a| a[:baltimore]}.inspect %>,
                         color: '#FFA200'
                         },
                         
                         {
                         name: "Boston",
                         legendIndex : 4,
-                        data: <%= Standing11.select("boston").map {|a| a[:boston]}.inspect %>,
+                        data: <%= Standing08.select("boston").map {|a| a[:boston]}.inspect %>,
                         color: '#9C001D'
                         }, 
                         
                         {
                         name: "Chicago Cubs",
                         legendIndex : 5,
-                        data: <%= Standing11.select("chicagocubs").map {|a| a[:chicagocubs]}.inspect %>,
+                        data: <%= Standing08.select("chicagocubs").map {|a| a[:chicagocubs]}.inspect %>,
                         color: '#3672FF'
                         }, 
                         
                         {
                         name: "Chicago Sox",
                         legendIndex : 6,
-                        data: <%= Standing11.select("chicagosox").map {|a| a[:chicagosox]}.inspect %>,
+                        data: <%= Standing08.select("chicagosox").map {|a| a[:chicagosox]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Cincinnati",
                         legendIndex : 7,
-                        data: <%= Standing11.select("cincinnati").map {|a| a[:cincinnati]}.inspect %>,
+                        data: <%= Standing08.select("cincinnati").map {|a| a[:cincinnati]}.inspect %>,
                         color: '#CC0018',
                         }, 
                         
                         {
                         name: "Cleveland",
                         legendIndex : 8,
-                        data: <%= Standing11.select("cleveland").map {|a| a[:cleveland]}.inspect %>,
+                        data: <%= Standing08.select("cleveland").map {|a| a[:cleveland]}.inspect %>,
                         color: '#004175',
                         }, 
                         
@@ -424,42 +424,42 @@
                         name: "Colorado",
                         legendIndex : 9,
                         visible: true,
-                        data: <%= Standing11.select("colorado").map {|a| a[:colorado]}.inspect %>,
+                        data: <%= Standing08.select("colorado").map {|a| a[:colorado]}.inspect %>,
                         color: '#7B0C91',
                         },
                         
                         {
                         name: "Detroit",
                         legendIndex : 10,
-                        data: <%= Standing11.select("detroit").map {|a| a[:detroit]}.inspect %>,
+                        data: <%= Standing08.select("detroit").map {|a| a[:detroit]}.inspect %>,
                         color: '#FFA200'  
                         },
                         
                         {
                         name: "Florida",
                         legendIndex : 11,
-                        data: <%= Standing11.select("florida").map {|a| a[:florida]}.inspect %>,
+                        data: <%= Standing08.select("florida").map {|a| a[:florida]}.inspect %>,
                         color: '#00C3D9'
                         }, 
                         
                         {
                         name: "Houston",
                         legendIndex : 12 ,
-                        data: <%= Standing11.select("houston").map {|a| a[:houston]}.inspect %>,
+                        data: <%= Standing08.select("houston").map {|a| a[:houston]}.inspect %>,
                         color: '#FF9500'  
                         },
                         
                         {
                         name: "Kansas City",
                         legendIndex : 13,
-                        data: <%= Standing11.select("kansascity").map {|a| a[:kansascity]}.inspect %>,
+                        data: <%= Standing08.select("kansascity").map {|a| a[:kansascity]}.inspect %>,
                         color: '#3A94DE'
                         }, 
                         
                         {
                         name: "LA Angels",
                         legendIndex : 14,
-                        data: <%= Standing11.select("laangels").map {|a| a[:laangels]}.inspect %>,
+                        data: <%= Standing08.select("laangels").map {|a| a[:laangels]}.inspect %>,
                         color: '#FF002F'
                         }, 
                         
@@ -467,63 +467,63 @@
                         name: "LA Dodgers",
                         legendIndex : 15,
                         visible: true,
-                        data: <%= Standing11.select("ladodgers").map {|a| a[:ladodgers]}.inspect %>,
+                        data: <%= Standing08.select("ladodgers").map {|a| a[:ladodgers]}.inspect %>,
                         color: '#163591'
                         }, 
                         
                         {
                         name: "Milwaukee",
                         legendIndex : 16,
-                        data: <%= Standing11.select("milwaukee").map {|a| a[:milwaukee]}.inspect %>,
+                        data: <%= Standing08.select("milwaukee").map {|a| a[:milwaukee]}.inspect %>,
                         color: '#407AB8'
                         }, 
                         
                         {
                         name: "Minnesota",
                         legendIndex : 17,
-                        data: <%= Standing11.select("minnesota").map {|a| a[:minnesota]}.inspect %>,
+                        data: <%= Standing08.select("minnesota").map {|a| a[:minnesota]}.inspect %>,
                         color: '#9C001D'
                         },
                         
                         {
                         name: "NY Mets",
                         legendIndex : 18,
-                        data: <%= Standing11.select("nymets").map {|a| a[:nymets]}.inspect %>,
+                        data: <%= Standing08.select("nymets").map {|a| a[:nymets]}.inspect %>,
                         color: '#0097F5'
                         },
                         
                         {
                         name: "NY Yankees",
                         legendIndex : 19,
-                        data: <%= Standing11.select("nyyankees").map {|a| a[:nyyankees]}.inspect %>,
+                        data: <%= Standing08.select("nyyankees").map {|a| a[:nyyankees]}.inspect %>,
                         color: '#004175'
                         },
                         
                         {
                         name: "Oakland",
                         legendIndex : 20,
-                        data: <%= Standing11.select("oakland").map {|a| a[:oakland]}.inspect %>,
+                        data: <%= Standing08.select("oakland").map {|a| a[:oakland]}.inspect %>,
                         color: '#00731B',
                         }, 
                         
                         {
                         name: "Philadelphia",
                         legendIndex : 21,
-                        data: <%= Standing11.select("philadelphia").map {|a| a[:philadelphia]}.inspect %>,
+                        data: <%= Standing08.select("philadelphia").map {|a| a[:philadelphia]}.inspect %>,
                         color: '#FC0F7E'
                         }, 
                         
                         {
                         name: "Pittsburgh",
                         legendIndex : 22,
-                        data: <%= Standing11.select("pittsburgh").map {|a| a[:pittsburgh]}.inspect %>,
+                        data: <%= Standing08.select("pittsburgh").map {|a| a[:pittsburgh]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Seattle",
                         legendIndex : 23,
-                        data: <%= Standing11.select("seattle").map {|a| a[:seattle]}.inspect %>,
+                        data: <%= Standing08.select("seattle").map {|a| a[:seattle]}.inspect %>,
                         color: '#009FBF'
                         }, 
                         
@@ -531,7 +531,7 @@
                         name: "San Diego",
                         legendIndex : 24,
                         visible: true,
-                        data: <%= Standing11.select("sandiego").map {|a| a[:sandiego]}.inspect %>,
+                        data: <%= Standing08.select("sandiego").map {|a| a[:sandiego]}.inspect %>,
                         color: '#838579'
                         }, 
                         
@@ -539,42 +539,42 @@
                         name: "San Francisco",
                         legendIndex : 25,
                         visible: true,
-                        data: <%= Standing11.select("sanfrancisco").map {|a| a[:sanfrancisco]}.inspect %>,
+                        data: <%= Standing08.select("sanfrancisco").map {|a| a[:sanfrancisco]}.inspect %>,
                         color: '#FF9500'
                         },
                         
                         {
                         name: "St. Louis",
                         legendIndex : 26,
-                        data: <%= Standing11.select("stlouis").map {|a| a[:stlouis]}.inspect %>,
+                        data: <%= Standing08.select("stlouis").map {|a| a[:stlouis]}.inspect %>,
                         color: '#87C0E6'
                         },
                         
                         {
                         name: "Tampa Bay",
                         legendIndex : 27,
-                        data: <%= Standing11.select("tampabay").map {|a| a[:tampabay]}.inspect %>,
+                        data: <%= Standing08.select("tampabay").map {|a| a[:tampabay]}.inspect %>,
                         color: '#3A94DE'
                         }, 
                         
                         {
                         name: "Texas",
                         legendIndex : 28,
-                        data: <%= Standing11.select("texas").map {|a| a[:texas]}.inspect %>,
+                        data: <%= Standing08.select("texas").map {|a| a[:texas]}.inspect %>,
                         color: '#008CFF'
                         },
                         
                         {
                         name: "Toronto",
                         legendIndex : 29,
-                        data: <%= Standing11.select("toronto").map {|a| a[:toronto]}.inspect %>,
+                        data: <%= Standing08.select("toronto").map {|a| a[:toronto]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Washington",
                         legendIndex : 30,
-                        data: <%= Standing11.select("washington").map {|a| a[:washington]}.inspect %>,
+                        data: <%= Standing08.select("washington").map {|a| a[:washington]}.inspect %>,
                         color: '#324B94'
                   }]
                   
@@ -592,7 +592,7 @@
                         animation: false
                   },
                   line : { pointInterval:  <%= 1.day * 1000 %>,
-                               pointStart:  Date.UTC(2011, 3, 1),
+                               pointStart:  Date.UTC(2008, 2, 26),
                              marker: { symbol: 'circle',
                                        radius: 3, },
             visible: false
@@ -624,28 +624,28 @@
                   [{
                         name: "Arizona",
                         legendIndex : 1,
-                        data: <%= Standing11.select("arizona").map {|a| a[:arizona]}.inspect %>,
+                        data: <%= Standing08.select("arizona").map {|a| a[:arizona]}.inspect %>,
                         color: '#A10028'
                         }, 
                         
                         {
                         name: "Atlanta",
                         legendIndex : 2,
-                        data: <%= Standing11.select("atlanta").map {|a| a[:atlanta]}.inspect %>,
+                        data: <%= Standing08.select("atlanta").map {|a| a[:atlanta]}.inspect %>,
                         color: '#A10028'
                         },
                         
                         {
                         name: "Baltimore",
                         legendIndex : 3,
-                        data: <%= Standing11.select("baltimore").map {|a| a[:baltimore]}.inspect %>,
+                        data: <%= Standing08.select("baltimore").map {|a| a[:baltimore]}.inspect %>,
                         color: '#FFA200'
                         },
                         
                         {
                         name: "Boston",
                         legendIndex : 4,
-                        data: <%= Standing11.select("boston").map {|a| a[:boston]}.inspect %>,
+                        data: <%= Standing08.select("boston").map {|a| a[:boston]}.inspect %>,
                         color: '#9C001D'
                         }, 
                         
@@ -653,14 +653,14 @@
                         name: "Chicago Cubs",
                         legendIndex : 5,
                         visible: true,
-                        data: <%= Standing11.select("chicagocubs").map {|a| a[:chicagocubs]}.inspect %>,
+                        data: <%= Standing08.select("chicagocubs").map {|a| a[:chicagocubs]}.inspect %>,
                         color: '#3672FF'
                         }, 
                         
                         {
                         name: "Chicago Sox",
                         legendIndex : 6,
-                        data: <%= Standing11.select("chicagosox").map {|a| a[:chicagosox]}.inspect %>,
+                        data: <%= Standing08.select("chicagosox").map {|a| a[:chicagosox]}.inspect %>,
                         color: '#000000'
                         },
                         
@@ -668,35 +668,35 @@
                         name: "Cincinnati",
                         legendIndex : 7,
                         visible: true,
-                        data: <%= Standing11.select("cincinnati").map {|a| a[:cincinnati]}.inspect %>,
+                        data: <%= Standing08.select("cincinnati").map {|a| a[:cincinnati]}.inspect %>,
                         color: '#CC0018',
                         }, 
                         
                         {
                         name: "Cleveland",
                         legendIndex : 8,
-                        data: <%= Standing11.select("cleveland").map {|a| a[:cleveland]}.inspect %>,
+                        data: <%= Standing08.select("cleveland").map {|a| a[:cleveland]}.inspect %>,
                         color: '#004175',
                         }, 
                         
                         {
                         name: "Colorado",
                         legendIndex : 9,
-                        data: <%= Standing11.select("colorado").map {|a| a[:colorado]}.inspect %>,
+                        data: <%= Standing08.select("colorado").map {|a| a[:colorado]}.inspect %>,
                         color: '#7B0C91',
                         },
                         
                         {
                         name: "Detroit",
                         legendIndex : 10,
-                        data: <%= Standing11.select("detroit").map {|a| a[:detroit]}.inspect %>,
+                        data: <%= Standing08.select("detroit").map {|a| a[:detroit]}.inspect %>,
                         color: '#FFA200'  
                         },
                         
                         {
                         name: "Florida",
                         legendIndex : 11,
-                        data: <%= Standing11.select("florida").map {|a| a[:florida]}.inspect %>,
+                        data: <%= Standing08.select("florida").map {|a| a[:florida]}.inspect %>,
                         color: '#00C3D9'
                         }, 
                         
@@ -704,28 +704,28 @@
                         name: "Houston",
                         legendIndex : 12 ,
                         visible: true,
-                        data: <%= Standing11.select("houston").map {|a| a[:houston]}.inspect %>,
+                        data: <%= Standing08.select("houston").map {|a| a[:houston]}.inspect %>,
                         color: '#FF9500'  
                         },
                         
                         {
                         name: "Kansas City",
                         legendIndex : 13,
-                        data: <%= Standing11.select("kansascity").map {|a| a[:kansascity]}.inspect %>,
+                        data: <%= Standing08.select("kansascity").map {|a| a[:kansascity]}.inspect %>,
                         color: '#3A94DE'
                         }, 
                         
                         {
                         name: "LA Angels",
                         legendIndex : 14,
-                        data: <%= Standing11.select("laangels").map {|a| a[:laangels]}.inspect %>,
+                        data: <%= Standing08.select("laangels").map {|a| a[:laangels]}.inspect %>,
                         color: '#FF002F'
                         }, 
                         
                         {
                         name: "LA Dodgers",
                         legendIndex : 15,
-                        data: <%= Standing11.select("ladodgers").map {|a| a[:ladodgers]}.inspect %>,
+                        data: <%= Standing08.select("ladodgers").map {|a| a[:ladodgers]}.inspect %>,
                         color: '#163591'
                         }, 
                         
@@ -733,42 +733,42 @@
                         name: "Milwaukee",
                         legendIndex : 16,
                         visible: true,
-                        data: <%= Standing11.select("milwaukee").map {|a| a[:milwaukee]}.inspect %>,
+                        data: <%= Standing08.select("milwaukee").map {|a| a[:milwaukee]}.inspect %>,
                         color: '#407AB8'
                         }, 
                         
                         {
                         name: "Minnesota",
                         legendIndex : 17,
-                        data: <%= Standing11.select("minnesota").map {|a| a[:minnesota]}.inspect %>,
+                        data: <%= Standing08.select("minnesota").map {|a| a[:minnesota]}.inspect %>,
                         color: '#9C001D'
                         },
                         
                         {
                         name: "NY Mets",
                         legendIndex : 18,
-                        data: <%= Standing11.select("nymets").map {|a| a[:nymets]}.inspect %>,
+                        data: <%= Standing08.select("nymets").map {|a| a[:nymets]}.inspect %>,
                         color: '#0097F5'
                         },
                         
                         {
                         name: "NY Yankees",
                         legendIndex : 19,
-                        data: <%= Standing11.select("nyyankees").map {|a| a[:nyyankees]}.inspect %>,
+                        data: <%= Standing08.select("nyyankees").map {|a| a[:nyyankees]}.inspect %>,
                         color: '#004175'
                         },
                         
                         {
                         name: "Oakland",
                         legendIndex : 20,
-                        data: <%= Standing11.select("oakland").map {|a| a[:oakland]}.inspect %>,
+                        data: <%= Standing08.select("oakland").map {|a| a[:oakland]}.inspect %>,
                         color: '#00731B',
                         }, 
                         
                         {
                         name: "Philadelphia",
                         legendIndex : 21,
-                        data: <%= Standing11.select("philadelphia").map {|a| a[:philadelphia]}.inspect %>,
+                        data: <%= Standing08.select("philadelphia").map {|a| a[:philadelphia]}.inspect %>,
                         color: '#FC0F7E'
                         }, 
                         
@@ -776,28 +776,28 @@
                         name: "Pittsburgh",
                         legendIndex : 22,
                         visible: true,
-                        data: <%= Standing11.select("pittsburgh").map {|a| a[:pittsburgh]}.inspect %>,
+                        data: <%= Standing08.select("pittsburgh").map {|a| a[:pittsburgh]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Seattle",
                         legendIndex : 23,
-                        data: <%= Standing11.select("seattle").map {|a| a[:seattle]}.inspect %>,
+                        data: <%= Standing08.select("seattle").map {|a| a[:seattle]}.inspect %>,
                         color: '#009FBF'
                         }, 
                         
                         {
                         name: "San Diego",
                         legendIndex : 24,
-                        data: <%= Standing11.select("sandiego").map {|a| a[:sandiego]}.inspect %>,
+                        data: <%= Standing08.select("sandiego").map {|a| a[:sandiego]}.inspect %>,
                         color: '#838579'
                         }, 
                         
                         {
                         name: "San Francisco",
                         legendIndex : 25,
-                        data: <%= Standing11.select("sanfrancisco").map {|a| a[:sanfrancisco]}.inspect %>,
+                        data: <%= Standing08.select("sanfrancisco").map {|a| a[:sanfrancisco]}.inspect %>,
                         color: '#FF9500'
                         },
                         
@@ -805,35 +805,35 @@
                         name: "St. Louis",
                         legendIndex : 26,
                         visible: true,
-                        data: <%= Standing11.select("stlouis").map {|a| a[:stlouis]}.inspect %>,
+                        data: <%= Standing08.select("stlouis").map {|a| a[:stlouis]}.inspect %>,
                         color: '#87C0E6'
                         },
                         
                         {
                         name: "Tampa Bay",
                         legendIndex : 27,
-                        data: <%= Standing11.select("tampabay").map {|a| a[:tampabay]}.inspect %>,
+                        data: <%= Standing08.select("tampabay").map {|a| a[:tampabay]}.inspect %>,
                         color: '#3A94DE'
                         }, 
                         
                         {
                         name: "Texas",
                         legendIndex : 28,
-                        data: <%= Standing11.select("texas").map {|a| a[:texas]}.inspect %>,
+                        data: <%= Standing08.select("texas").map {|a| a[:texas]}.inspect %>,
                         color: '#008CFF'
                         },
                         
                         {
                         name: "Toronto",
                         legendIndex : 29,
-                        data: <%= Standing11.select("toronto").map {|a| a[:toronto]}.inspect %>,
+                        data: <%= Standing08.select("toronto").map {|a| a[:toronto]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Washington",
                         legendIndex : 30,
-                        data: <%= Standing11.select("washington").map {|a| a[:washington]}.inspect %>,
+                        data: <%= Standing08.select("washington").map {|a| a[:washington]}.inspect %>,
                         color: '#324B94'
                   }]
             
@@ -852,7 +852,7 @@
                         animation: false
                   },
                   line : { pointInterval:  <%= 1.day * 1000 %>,
-                               pointStart:  Date.UTC(2011, 3, 1),
+                               pointStart:  Date.UTC(2008, 2, 26),
                              marker: { symbol: 'circle',
                                        radius: 3, },
                          visible: false
@@ -884,7 +884,7 @@
                   [{
                         name: "Arizona",
                         legendIndex : 1,
-                        data: <%= Standing11.select("arizona").map {|a| a[:arizona]}.inspect %>,
+                        data: <%= Standing08.select("arizona").map {|a| a[:arizona]}.inspect %>,
                         color: '#A10028'
                         }, 
                         
@@ -892,63 +892,63 @@
                         name: "Atlanta",
                         legendIndex : 2,
                         visible: true,
-                        data: <%= Standing11.select("atlanta").map {|a| a[:atlanta]}.inspect %>,
+                        data: <%= Standing08.select("atlanta").map {|a| a[:atlanta]}.inspect %>,
                         color: '#A10028'
                         },
                         
                         {
                         name: "Baltimore",
                         legendIndex : 3,
-                        data: <%= Standing11.select("baltimore").map {|a| a[:baltimore]}.inspect %>,
+                        data: <%= Standing08.select("baltimore").map {|a| a[:baltimore]}.inspect %>,
                         color: '#FFA200'
                         },
                         
                         {
                         name: "Boston",
                         legendIndex : 4,
-                        data: <%= Standing11.select("boston").map {|a| a[:boston]}.inspect %>,
+                        data: <%= Standing08.select("boston").map {|a| a[:boston]}.inspect %>,
                         color: '#9C001D'
                         }, 
                         
                         {
                         name: "Chicago Cubs",
                         legendIndex : 5,
-                        data: <%= Standing11.select("chicagocubs").map {|a| a[:chicagocubs]}.inspect %>,
+                        data: <%= Standing08.select("chicagocubs").map {|a| a[:chicagocubs]}.inspect %>,
                         color: '#3672FF'
                         }, 
                         
                         {
                         name: "Chicago Sox",
                         legendIndex : 6,
-                        data: <%= Standing11.select("chicagosox").map {|a| a[:chicagosox]}.inspect %>,
+                        data: <%= Standing08.select("chicagosox").map {|a| a[:chicagosox]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Cincinnati",
                         legendIndex : 7,
-                        data: <%= Standing11.select("cincinnati").map {|a| a[:cincinnati]}.inspect %>,
+                        data: <%= Standing08.select("cincinnati").map {|a| a[:cincinnati]}.inspect %>,
                         color: '#CC0018',
                         }, 
                         
                         {
                         name: "Cleveland",
                         legendIndex : 8,
-                        data: <%= Standing11.select("cleveland").map {|a| a[:cleveland]}.inspect %>,
+                        data: <%= Standing08.select("cleveland").map {|a| a[:cleveland]}.inspect %>,
                         color: '#004175',
                         }, 
                         
                         {
                         name: "Colorado",
                         legendIndex : 9,
-                        data: <%= Standing11.select("colorado").map {|a| a[:colorado]}.inspect %>,
+                        data: <%= Standing08.select("colorado").map {|a| a[:colorado]}.inspect %>,
                         color: '#7B0C91',
                         },
                         
                         {
                         name: "Detroit",
                         legendIndex : 10,
-                        data: <%= Standing11.select("detroit").map {|a| a[:detroit]}.inspect %>,
+                        data: <%= Standing08.select("detroit").map {|a| a[:detroit]}.inspect %>,
                         color: '#FFA200'  
                         },
                         
@@ -956,49 +956,49 @@
                         name: "Florida",
                         legendIndex : 11,
                         visible: true,
-                        data: <%= Standing11.select("florida").map {|a| a[:florida]}.inspect %>,
+                        data: <%= Standing08.select("florida").map {|a| a[:florida]}.inspect %>,
                         color: '#00C3D9'
                         }, 
                         
                         {
                         name: "Houston",
                         legendIndex : 12 ,
-                        data: <%= Standing11.select("houston").map {|a| a[:houston]}.inspect %>,
+                        data: <%= Standing08.select("houston").map {|a| a[:houston]}.inspect %>,
                         color: '#FF9500'  
                         },
                         
                         {
                         name: "Kansas City",
                         legendIndex : 13,
-                        data: <%= Standing11.select("kansascity").map {|a| a[:kansascity]}.inspect %>,
+                        data: <%= Standing08.select("kansascity").map {|a| a[:kansascity]}.inspect %>,
                         color: '#3A94DE'
                         }, 
                         
                         {
                         name: "LA Angels",
                         legendIndex : 14,
-                        data: <%= Standing11.select("laangels").map {|a| a[:laangels]}.inspect %>,
+                        data: <%= Standing08.select("laangels").map {|a| a[:laangels]}.inspect %>,
                         color: '#FF002F'
                         }, 
                         
                         {
                         name: "LA Dodgers",
                         legendIndex : 15,
-                        data: <%= Standing11.select("ladodgers").map {|a| a[:ladodgers]}.inspect %>,
+                        data: <%= Standing08.select("ladodgers").map {|a| a[:ladodgers]}.inspect %>,
                         color: '#163591'
                         }, 
                         
                         {
                         name: "Milwaukee",
                         legendIndex : 16,
-                        data: <%= Standing11.select("milwaukee").map {|a| a[:milwaukee]}.inspect %>,
+                        data: <%= Standing08.select("milwaukee").map {|a| a[:milwaukee]}.inspect %>,
                         color: '#407AB8'
                         }, 
                         
                         {
                         name: "Minnesota",
                         legendIndex : 17,
-                        data: <%= Standing11.select("minnesota").map {|a| a[:minnesota]}.inspect %>,
+                        data: <%= Standing08.select("minnesota").map {|a| a[:minnesota]}.inspect %>,
                         color: '#9C001D'
                         },
                         
@@ -1006,21 +1006,21 @@
                         name: "NY Mets",
                         legendIndex : 18,
                         visible: true,
-                        data: <%= Standing11.select("nymets").map {|a| a[:nymets]}.inspect %>,
+                        data: <%= Standing08.select("nymets").map {|a| a[:nymets]}.inspect %>,
                         color: '#0097F5'
                         },
                         
                         {
                         name: "NY Yankees",
                         legendIndex : 19,
-                        data: <%= Standing11.select("nyyankees").map {|a| a[:nyyankees]}.inspect %>,
+                        data: <%= Standing08.select("nyyankees").map {|a| a[:nyyankees]}.inspect %>,
                         color: '#004175'
                         },
                         
                         {
                         name: "Oakland",
                         legendIndex : 20,
-                        data: <%= Standing11.select("oakland").map {|a| a[:oakland]}.inspect %>,
+                        data: <%= Standing08.select("oakland").map {|a| a[:oakland]}.inspect %>,
                         color: '#00731B',
                         }, 
                         
@@ -1028,63 +1028,63 @@
                         name: "Philadelphia",
                         legendIndex : 21,
                         visible: true,
-                        data: <%= Standing11.select("philadelphia").map {|a| a[:philadelphia]}.inspect %>,
+                        data: <%= Standing08.select("philadelphia").map {|a| a[:philadelphia]}.inspect %>,
                         color: '#FC0F7E'
                         }, 
                         
                         {
                         name: "Pittsburgh",
                         legendIndex : 22,
-                        data: <%= Standing11.select("pittsburgh").map {|a| a[:pittsburgh]}.inspect %>,
+                        data: <%= Standing08.select("pittsburgh").map {|a| a[:pittsburgh]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Seattle",
                         legendIndex : 23,
-                        data: <%= Standing11.select("seattle").map {|a| a[:seattle]}.inspect %>,
+                        data: <%= Standing08.select("seattle").map {|a| a[:seattle]}.inspect %>,
                         color: '#009FBF'
                         }, 
                         
                         {
                         name: "San Diego",
                         legendIndex : 24,
-                        data: <%= Standing11.select("sandiego").map {|a| a[:sandiego]}.inspect %>,
+                        data: <%= Standing08.select("sandiego").map {|a| a[:sandiego]}.inspect %>,
                         color: '#838579'
                         }, 
                         
                         {
                         name: "San Francisco",
                         legendIndex : 25,
-                        data: <%= Standing11.select("sanfrancisco").map {|a| a[:sanfrancisco]}.inspect %>,
+                        data: <%= Standing08.select("sanfrancisco").map {|a| a[:sanfrancisco]}.inspect %>,
                         color: '#FF9500'
                         },
                         
                         {
                         name: "St. Louis",
                         legendIndex : 26,
-                        data: <%= Standing11.select("stlouis").map {|a| a[:stlouis]}.inspect %>,
+                        data: <%= Standing08.select("stlouis").map {|a| a[:stlouis]}.inspect %>,
                         color: '#87C0E6'
                         },
                         
                         {
                         name: "Tampa Bay",
                         legendIndex : 27,
-                        data: <%= Standing11.select("tampabay").map {|a| a[:tampabay]}.inspect %>,
+                        data: <%= Standing08.select("tampabay").map {|a| a[:tampabay]}.inspect %>,
                         color: '#3A94DE'
                         }, 
                         
                         {
                         name: "Texas",
                         legendIndex : 28,
-                        data: <%= Standing11.select("texas").map {|a| a[:texas]}.inspect %>,
+                        data: <%= Standing08.select("texas").map {|a| a[:texas]}.inspect %>,
                         color: '#008CFF'
                         },
                         
                         {
                         name: "Toronto",
                         legendIndex : 29,
-                        data: <%= Standing11.select("toronto").map {|a| a[:toronto]}.inspect %>,
+                        data: <%= Standing08.select("toronto").map {|a| a[:toronto]}.inspect %>,
                         color: '#000000'
                         },
                         
@@ -1092,7 +1092,7 @@
                         name: "Washington",
                         legendIndex : 30,
                         visible: true,
-                        data: <%= Standing11.select("washington").map {|a| a[:washington]}.inspect %>,
+                        data: <%= Standing08.select("washington").map {|a| a[:washington]}.inspect %>,
                         color: '#324B94'
                         }]
             
@@ -1113,7 +1113,7 @@
                         animation: false
                   },
                   line : { pointInterval:  <%= 1.day * 1000 %>,
-                               pointStart:  Date.UTC(2011, 3, 1),
+                               pointStart:  Date.UTC(2008, 2, 26),
                              marker: { symbol: 'circle',
                                        radius: 3, },
                          visible: false
@@ -1145,91 +1145,91 @@
                   [{
                         name: "Arizona",
                         legendIndex : 1,
-                        data: <%= Standing11.select("arizona").map {|a| a[:arizona]}.inspect %>,
+                        data: <%= Standing08.select("arizona").map {|a| a[:arizona]}.inspect %>,
                         color: '#A10028'
                         }, 
                         
                         {
                         name: "Atlanta",
                         legendIndex : 2,
-                        data: <%= Standing11.select("atlanta").map {|a| a[:atlanta]}.inspect %>,
+                        data: <%= Standing08.select("atlanta").map {|a| a[:atlanta]}.inspect %>,
                         color: '#A10028'
                         },
                         
                         {
                         name: "Baltimore",
                         legendIndex : 3,
-                        data: <%= Standing11.select("baltimore").map {|a| a[:baltimore]}.inspect %>,
+                        data: <%= Standing08.select("baltimore").map {|a| a[:baltimore]}.inspect %>,
                         color: '#FFA200'
                         },
                         
                         {
                         name: "Boston",
                         legendIndex : 4,
-                        data: <%= Standing11.select("boston").map {|a| a[:boston]}.inspect %>,
+                        data: <%= Standing08.select("boston").map {|a| a[:boston]}.inspect %>,
                         color: '#9C001D'
                         }, 
                         
                         {
                         name: "Chicago Cubs",
                         legendIndex : 5,
-                        data: <%= Standing11.select("chicagocubs").map {|a| a[:chicagocubs]}.inspect %>,
+                        data: <%= Standing08.select("chicagocubs").map {|a| a[:chicagocubs]}.inspect %>,
                         color: '#3672FF'
                         }, 
                         
                         {
                         name: "Chicago Sox",
                         legendIndex : 6,
-                        data: <%= Standing11.select("chicagosox").map {|a| a[:chicagosox]}.inspect %>,
+                        data: <%= Standing08.select("chicagosox").map {|a| a[:chicagosox]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Cincinnati",
                         legendIndex : 7,
-                        data: <%= Standing11.select("cincinnati").map {|a| a[:cincinnati]}.inspect %>,
+                        data: <%= Standing08.select("cincinnati").map {|a| a[:cincinnati]}.inspect %>,
                         color: '#CC0018',
                         }, 
                         
                         {
                         name: "Cleveland",
                         legendIndex : 8,
-                        data: <%= Standing11.select("cleveland").map {|a| a[:cleveland]}.inspect %>,
+                        data: <%= Standing08.select("cleveland").map {|a| a[:cleveland]}.inspect %>,
                         color: '#004175',
                         }, 
                         
                         {
                         name: "Colorado",
                         legendIndex : 9,
-                        data: <%= Standing11.select("colorado").map {|a| a[:colorado]}.inspect %>,
+                        data: <%= Standing08.select("colorado").map {|a| a[:colorado]}.inspect %>,
                         color: '#7B0C91',
                         },
                         
                         {
                         name: "Detroit",
                         legendIndex : 10,
-                        data: <%= Standing11.select("detroit").map {|a| a[:detroit]}.inspect %>,
+                        data: <%= Standing08.select("detroit").map {|a| a[:detroit]}.inspect %>,
                         color: '#FFA200'  
                         },
                         
                         {
                         name: "Florida",
                         legendIndex : 11,
-                        data: <%= Standing11.select("florida").map {|a| a[:florida]}.inspect %>,
+                        data: <%= Standing08.select("florida").map {|a| a[:florida]}.inspect %>,
                         color: '#00C3D9'
                         }, 
                         
                         {
                         name: "Houston",
                         legendIndex : 12 ,
-                        data: <%= Standing11.select("houston").map {|a| a[:houston]}.inspect %>,
+                        data: <%= Standing08.select("houston").map {|a| a[:houston]}.inspect %>,
                         color: '#FF9500'  
                         },
                         
                         {
                         name: "Kansas City",
                         legendIndex : 13,
-                        data: <%= Standing11.select("kansascity").map {|a| a[:kansascity]}.inspect %>,
+                        data: <%= Standing08.select("kansascity").map {|a| a[:kansascity]}.inspect %>,
                         color: '#3A94DE'
                         }, 
                         
@@ -1237,42 +1237,42 @@
                         name: "LA Angels",
                         legendIndex : 14,
                         visible: true,
-                        data: <%= Standing11.select("laangels").map {|a| a[:laangels]}.inspect %>,
+                        data: <%= Standing08.select("laangels").map {|a| a[:laangels]}.inspect %>,
                         color: '#FF002F'
                         }, 
                         
                         {
                         name: "LA Dodgers",
                         legendIndex : 15,
-                        data: <%= Standing11.select("ladodgers").map {|a| a[:ladodgers]}.inspect %>,
+                        data: <%= Standing08.select("ladodgers").map {|a| a[:ladodgers]}.inspect %>,
                         color: '#163591'
                         }, 
                         
                         {
                         name: "Milwaukee",
                         legendIndex : 16,
-                        data: <%= Standing11.select("milwaukee").map {|a| a[:milwaukee]}.inspect %>,
+                        data: <%= Standing08.select("milwaukee").map {|a| a[:milwaukee]}.inspect %>,
                         color: '#407AB8'
                         }, 
                         
                         {
                         name: "Minnesota",
                         legendIndex : 17,
-                        data: <%= Standing11.select("minnesota").map {|a| a[:minnesota]}.inspect %>,
+                        data: <%= Standing08.select("minnesota").map {|a| a[:minnesota]}.inspect %>,
                         color: '#9C001D'
                         },
                         
                         {
                         name: "NY Mets",
                         legendIndex : 18,
-                        data: <%= Standing11.select("nymets").map {|a| a[:nymets]}.inspect %>,
+                        data: <%= Standing08.select("nymets").map {|a| a[:nymets]}.inspect %>,
                         color: '#0097F5'
                         },
                         
                         {
                         name: "NY Yankees",
                         legendIndex : 19,
-                        data: <%= Standing11.select("nyyankees").map {|a| a[:nyyankees]}.inspect %>,
+                        data: <%= Standing08.select("nyyankees").map {|a| a[:nyyankees]}.inspect %>,
                         color: '#004175'
                         },
                         
@@ -1280,21 +1280,21 @@
                         name: "Oakland",
                         legendIndex : 20,
                         visible: true,
-                        data: <%= Standing11.select("oakland").map {|a| a[:oakland]}.inspect %>,
+                        data: <%= Standing08.select("oakland").map {|a| a[:oakland]}.inspect %>,
                         color: '#00731B',
                         }, 
                         
                         {
                         name: "Philadelphia",
                         legendIndex : 21,
-                        data: <%= Standing11.select("philadelphia").map {|a| a[:philadelphia]}.inspect %>,
+                        data: <%= Standing08.select("philadelphia").map {|a| a[:philadelphia]}.inspect %>,
                         color: '#FC0F7E'
                         }, 
                         
                         {
                         name: "Pittsburgh",
                         legendIndex : 22,
-                        data: <%= Standing11.select("pittsburgh").map {|a| a[:pittsburgh]}.inspect %>,
+                        data: <%= Standing08.select("pittsburgh").map {|a| a[:pittsburgh]}.inspect %>,
                         color: '#000000'
                         },
                         
@@ -1302,35 +1302,35 @@
                         name: "Seattle",
                         legendIndex : 23,
                         visible: true,
-                        data: <%= Standing11.select("seattle").map {|a| a[:seattle]}.inspect %>,
+                        data: <%= Standing08.select("seattle").map {|a| a[:seattle]}.inspect %>,
                         color: '#009FBF'
                         }, 
                         
                         {
                         name: "San Diego",
                         legendIndex : 24,
-                        data: <%= Standing11.select("sandiego").map {|a| a[:sandiego]}.inspect %>,
+                        data: <%= Standing08.select("sandiego").map {|a| a[:sandiego]}.inspect %>,
                         color: '#838579'
                         }, 
                         
                         {
                         name: "San Francisco",
                         legendIndex : 25,
-                        data: <%= Standing11.select("sanfrancisco").map {|a| a[:sanfrancisco]}.inspect %>,
+                        data: <%= Standing08.select("sanfrancisco").map {|a| a[:sanfrancisco]}.inspect %>,
                         color: '#FF9500'
                         },
                         
                         {
                         name: "St. Louis",
                         legendIndex : 26,
-                        data: <%= Standing11.select("stlouis").map {|a| a[:stlouis]}.inspect %>,
+                        data: <%= Standing08.select("stlouis").map {|a| a[:stlouis]}.inspect %>,
                         color: '#87C0E6'
                         },
                         
                         {
                         name: "Tampa Bay",
                         legendIndex : 27,
-                        data: <%= Standing11.select("tampabay").map {|a| a[:tampabay]}.inspect %>,
+                        data: <%= Standing08.select("tampabay").map {|a| a[:tampabay]}.inspect %>,
                         color: '#3A94DE'
                         }, 
                         
@@ -1338,21 +1338,21 @@
                         name: "Texas",
                         legendIndex : 28,
                         visible: true,
-                        data: <%= Standing11.select("texas").map {|a| a[:texas]}.inspect %>,
+                        data: <%= Standing08.select("texas").map {|a| a[:texas]}.inspect %>,
                         color: '#008CFF'
                         },
                         
                         {
                         name: "Toronto",
                         legendIndex : 29,
-                        data: <%= Standing11.select("toronto").map {|a| a[:toronto]}.inspect %>,
+                        data: <%= Standing08.select("toronto").map {|a| a[:toronto]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Washington",
                         legendIndex : 30,
-                        data: <%= Standing11.select("washington").map {|a| a[:washington]}.inspect %>,
+                        data: <%= Standing08.select("washington").map {|a| a[:washington]}.inspect %>,
                         color: '#324B94'
                   }]
             
@@ -1373,7 +1373,7 @@
                         animation: false
                   },
                   line : { pointInterval:  <%= 1.day * 1000 %>,
-                               pointStart:  Date.UTC(2011, 3, 1),
+                               pointStart:  Date.UTC(2008, 2, 26),
                              marker: { symbol: 'circle',
                                        radius: 3, },
                          visible: false
@@ -1405,35 +1405,35 @@
                   [{
                         name: "Arizona",
                         legendIndex : 1,
-                        data: <%= Standing11.select("arizona").map {|a| a[:arizona]}.inspect %>,
+                        data: <%= Standing08.select("arizona").map {|a| a[:arizona]}.inspect %>,
                         color: '#A10028'
                         }, 
                         
                         {
                         name: "Atlanta",
                         legendIndex : 2,
-                        data: <%= Standing11.select("atlanta").map {|a| a[:atlanta]}.inspect %>,
+                        data: <%= Standing08.select("atlanta").map {|a| a[:atlanta]}.inspect %>,
                         color: '#A10028'
                         },
                         
                         {
                         name: "Baltimore",
                         legendIndex : 3,
-                        data: <%= Standing11.select("baltimore").map {|a| a[:baltimore]}.inspect %>,
+                        data: <%= Standing08.select("baltimore").map {|a| a[:baltimore]}.inspect %>,
                         color: '#FFA200'
                         },
                         
                         {
                         name: "Boston",
                         legendIndex : 4,
-                        data: <%= Standing11.select("boston").map {|a| a[:boston]}.inspect %>,
+                        data: <%= Standing08.select("boston").map {|a| a[:boston]}.inspect %>,
                         color: '#9C001D'
                         }, 
                         
                         {
                         name: "Chicago Cubs",
                         legendIndex : 5,
-                        data: <%= Standing11.select("chicagocubs").map {|a| a[:chicagocubs]}.inspect %>,
+                        data: <%= Standing08.select("chicagocubs").map {|a| a[:chicagocubs]}.inspect %>,
                         color: '#3672FF'
                         }, 
                         
@@ -1441,14 +1441,14 @@
                         name: "Chicago Sox",
                         legendIndex : 6,
                         visible: true,
-                        data: <%= Standing11.select("chicagosox").map {|a| a[:chicagosox]}.inspect %>,
+                        data: <%= Standing08.select("chicagosox").map {|a| a[:chicagosox]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Cincinnati",
                         legendIndex : 7,
-                        data: <%= Standing11.select("cincinnati").map {|a| a[:cincinnati]}.inspect %>,
+                        data: <%= Standing08.select("cincinnati").map {|a| a[:cincinnati]}.inspect %>,
                         color: '#CC0018',
                         }, 
                         
@@ -1456,14 +1456,14 @@
                         name: "Cleveland",
                         legendIndex : 8,
                         visible: true,
-                        data: <%= Standing11.select("cleveland").map {|a| a[:cleveland]}.inspect %>,
+                        data: <%= Standing08.select("cleveland").map {|a| a[:cleveland]}.inspect %>,
                         color: '#004175',
                         }, 
                         
                         {
                         name: "Colorado",
                         legendIndex : 9,
-                        data: <%= Standing11.select("colorado").map {|a| a[:colorado]}.inspect %>,
+                        data: <%= Standing08.select("colorado").map {|a| a[:colorado]}.inspect %>,
                         color: '#7B0C91',
                         },
                         
@@ -1471,21 +1471,21 @@
                         name: "Detroit",
                         legendIndex : 10,
                         visible: true,
-                        data: <%= Standing11.select("detroit").map {|a| a[:detroit]}.inspect %>,
+                        data: <%= Standing08.select("detroit").map {|a| a[:detroit]}.inspect %>,
                         color: '#FFA200'  
                         },
                         
                         {
                         name: "Florida",
                         legendIndex : 11,
-                        data: <%= Standing11.select("florida").map {|a| a[:florida]}.inspect %>,
+                        data: <%= Standing08.select("florida").map {|a| a[:florida]}.inspect %>,
                         color: '#00C3D9'
                         }, 
                         
                         {
                         name: "Houston",
                         legendIndex : 12 ,
-                        data: <%= Standing11.select("houston").map {|a| a[:houston]}.inspect %>,
+                        data: <%= Standing08.select("houston").map {|a| a[:houston]}.inspect %>,
                         color: '#FF9500'  
                         },
                         
@@ -1493,28 +1493,28 @@
                         name: "Kansas City",
                         legendIndex : 13,
                         visible: true,
-                        data: <%= Standing11.select("kansascity").map {|a| a[:kansascity]}.inspect %>,
+                        data: <%= Standing08.select("kansascity").map {|a| a[:kansascity]}.inspect %>,
                         color: '#3A94DE'
                         }, 
                         
                         {
                         name: "LA Angels",
                         legendIndex : 14,
-                        data: <%= Standing11.select("laangels").map {|a| a[:laangels]}.inspect %>,
+                        data: <%= Standing08.select("laangels").map {|a| a[:laangels]}.inspect %>,
                         color: '#FF002F'
                         }, 
                         
                         {
                         name: "LA Dodgers",
                         legendIndex : 15,
-                        data: <%= Standing11.select("ladodgers").map {|a| a[:ladodgers]}.inspect %>,
+                        data: <%= Standing08.select("ladodgers").map {|a| a[:ladodgers]}.inspect %>,
                         color: '#163591'
                         }, 
                         
                         {
                         name: "Milwaukee",
                         legendIndex : 16,
-                        data: <%= Standing11.select("milwaukee").map {|a| a[:milwaukee]}.inspect %>,
+                        data: <%= Standing08.select("milwaukee").map {|a| a[:milwaukee]}.inspect %>,
                         color: '#407AB8'
                         }, 
                         
@@ -1522,98 +1522,98 @@
                         name: "Minnesota",
                         legendIndex : 17,
                         visible: true,
-                        data: <%= Standing11.select("minnesota").map {|a| a[:minnesota]}.inspect %>,
+                        data: <%= Standing08.select("minnesota").map {|a| a[:minnesota]}.inspect %>,
                         color: '#9C001D'
                         },
                         
                         {
                         name: "NY Mets",
                         legendIndex : 18,
-                        data: <%= Standing11.select("nymets").map {|a| a[:nymets]}.inspect %>,
+                        data: <%= Standing08.select("nymets").map {|a| a[:nymets]}.inspect %>,
                         color: '#0097F5'
                         },
                         
                         {
                         name: "NY Yankees",
                         legendIndex : 19,
-                        data: <%= Standing11.select("nyyankees").map {|a| a[:nyyankees]}.inspect %>,
+                        data: <%= Standing08.select("nyyankees").map {|a| a[:nyyankees]}.inspect %>,
                         color: '#004175'
                         },
                         
                         {
                         name: "Oakland",
                         legendIndex : 20,
-                        data: <%= Standing11.select("oakland").map {|a| a[:oakland]}.inspect %>,
+                        data: <%= Standing08.select("oakland").map {|a| a[:oakland]}.inspect %>,
                         color: '#00731B',
                         }, 
                         
                         {
                         name: "Philadelphia",
                         legendIndex : 21,
-                        data: <%= Standing11.select("philadelphia").map {|a| a[:philadelphia]}.inspect %>,
+                        data: <%= Standing08.select("philadelphia").map {|a| a[:philadelphia]}.inspect %>,
                         color: '#FC0F7E'
                         }, 
                         
                         {
                         name: "Pittsburgh",
                         legendIndex : 22,
-                        data: <%= Standing11.select("pittsburgh").map {|a| a[:pittsburgh]}.inspect %>,
+                        data: <%= Standing08.select("pittsburgh").map {|a| a[:pittsburgh]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Seattle",
                         legendIndex : 23,
-                        data: <%= Standing11.select("seattle").map {|a| a[:seattle]}.inspect %>,
+                        data: <%= Standing08.select("seattle").map {|a| a[:seattle]}.inspect %>,
                         color: '#009FBF'
                         }, 
                         
                         {
                         name: "San Diego",
                         legendIndex : 24,
-                        data: <%= Standing11.select("sandiego").map {|a| a[:sandiego]}.inspect %>,
+                        data: <%= Standing08.select("sandiego").map {|a| a[:sandiego]}.inspect %>,
                         color: '#838579'
                         }, 
                         
                         {
                         name: "San Francisco",
                         legendIndex : 25,
-                        data: <%= Standing11.select("sanfrancisco").map {|a| a[:sanfrancisco]}.inspect %>,
+                        data: <%= Standing08.select("sanfrancisco").map {|a| a[:sanfrancisco]}.inspect %>,
                         color: '#FF9500'
                         },
                         
                         {
                         name: "St. Louis",
                         legendIndex : 26,
-                        data: <%= Standing11.select("stlouis").map {|a| a[:stlouis]}.inspect %>,
+                        data: <%= Standing08.select("stlouis").map {|a| a[:stlouis]}.inspect %>,
                         color: '#87C0E6'
                         },
                         
                         {
                         name: "Tampa Bay",
                         legendIndex : 27,
-                        data: <%= Standing11.select("tampabay").map {|a| a[:tampabay]}.inspect %>,
+                        data: <%= Standing08.select("tampabay").map {|a| a[:tampabay]}.inspect %>,
                         color: '#3A94DE'
                         }, 
                         
                         {
                         name: "Texas",
                         legendIndex : 28,
-                        data: <%= Standing11.select("texas").map {|a| a[:texas]}.inspect %>,
+                        data: <%= Standing08.select("texas").map {|a| a[:texas]}.inspect %>,
                         color: '#008CFF'
                         },
                         
                         {
                         name: "Toronto",
                         legendIndex : 29,
-                        data: <%= Standing11.select("toronto").map {|a| a[:toronto]}.inspect %>,
+                        data: <%= Standing08.select("toronto").map {|a| a[:toronto]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Washington",
                         legendIndex : 30,
-                        data: <%= Standing11.select("washington").map {|a| a[:washington]}.inspect %>,
+                        data: <%= Standing08.select("washington").map {|a| a[:washington]}.inspect %>,
                         color: '#324B94'
             }]
             
@@ -1634,7 +1634,7 @@
                         animation: false
                   },
                   line : { pointInterval:  <%= 1.day * 1000 %>,
-                               pointStart:  Date.UTC(2011, 3, 1),
+                               pointStart:  Date.UTC(2008, 2, 26),
                              marker: { symbol: 'circle',
                                        radius: 3, },
                          visible: false
@@ -1667,14 +1667,14 @@
                   [{
                         name: "Arizona",
                         legendIndex : 1,
-                        data: <%= Standing11.select("arizona").map {|a| a[:arizona]}.inspect %>,
+                        data: <%= Standing08.select("arizona").map {|a| a[:arizona]}.inspect %>,
                         color: '#A10028'
                         }, 
                         
                         {
                         name: "Atlanta",
                         legendIndex : 2,
-                        data: <%= Standing11.select("atlanta").map {|a| a[:atlanta]}.inspect %>,
+                        data: <%= Standing08.select("atlanta").map {|a| a[:atlanta]}.inspect %>,
                         color: '#A10028'
                         },
                         
@@ -1682,7 +1682,7 @@
                         name: "Baltimore",
                         legendIndex : 3,
                         visible: true,
-                        data: <%= Standing11.select("baltimore").map {|a| a[:baltimore]}.inspect %>,
+                        data: <%= Standing08.select("baltimore").map {|a| a[:baltimore]}.inspect %>,
                         color: '#FFA200'
                         },
                         
@@ -1690,105 +1690,105 @@
                         name: "Boston",
                         legendIndex : 4,
                         visible: true,
-                        data: <%= Standing11.select("boston").map {|a| a[:boston]}.inspect %>,
+                        data: <%= Standing08.select("boston").map {|a| a[:boston]}.inspect %>,
                         color: '#9C001D'
                         }, 
                         
                         {
                         name: "Chicago Cubs",
                         legendIndex : 5,
-                        data: <%= Standing11.select("chicagocubs").map {|a| a[:chicagocubs]}.inspect %>,
+                        data: <%= Standing08.select("chicagocubs").map {|a| a[:chicagocubs]}.inspect %>,
                         color: '#3672FF'
                         }, 
                         
                         {
                         name: "Chicago Sox",
                         legendIndex : 6,
-                        data: <%= Standing11.select("chicagosox").map {|a| a[:chicagosox]}.inspect %>,
+                        data: <%= Standing08.select("chicagosox").map {|a| a[:chicagosox]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Cincinnati",
                         legendIndex : 7,
-                        data: <%= Standing11.select("cincinnati").map {|a| a[:cincinnati]}.inspect %>,
+                        data: <%= Standing08.select("cincinnati").map {|a| a[:cincinnati]}.inspect %>,
                         color: '#CC0018',
                         }, 
                         
                         {
                         name: "Cleveland",
                         legendIndex : 8,
-                        data: <%= Standing11.select("cleveland").map {|a| a[:cleveland]}.inspect %>,
+                        data: <%= Standing08.select("cleveland").map {|a| a[:cleveland]}.inspect %>,
                         color: '#004175',
                         }, 
                         
                         {
                         name: "Colorado",
                         legendIndex : 9,
-                        data: <%= Standing11.select("colorado").map {|a| a[:colorado]}.inspect %>,
+                        data: <%= Standing08.select("colorado").map {|a| a[:colorado]}.inspect %>,
                         color: '#7B0C91',
                         },
                         
                         {
                         name: "Detroit",
                         legendIndex : 10,
-                        data: <%= Standing11.select("detroit").map {|a| a[:detroit]}.inspect %>,
+                        data: <%= Standing08.select("detroit").map {|a| a[:detroit]}.inspect %>,
                         color: '#FFA200'  
                         },
                         
                         {
                         name: "Florida",
                         legendIndex : 11,
-                        data: <%= Standing11.select("florida").map {|a| a[:florida]}.inspect %>,
+                        data: <%= Standing08.select("florida").map {|a| a[:florida]}.inspect %>,
                         color: '#00C3D9'
                         }, 
                         
                         {
                         name: "Houston",
                         legendIndex : 12 ,
-                        data: <%= Standing11.select("houston").map {|a| a[:houston]}.inspect %>,
+                        data: <%= Standing08.select("houston").map {|a| a[:houston]}.inspect %>,
                         color: '#FF9500'  
                         },
                         
                         {
                         name: "Kansas City",
                         legendIndex : 13,
-                        data: <%= Standing11.select("kansascity").map {|a| a[:kansascity]}.inspect %>,
+                        data: <%= Standing08.select("kansascity").map {|a| a[:kansascity]}.inspect %>,
                         color: '#3A94DE'
                         }, 
                         
                         {
                         name: "LA Angels",
                         legendIndex : 14,
-                        data: <%= Standing11.select("laangels").map {|a| a[:laangels]}.inspect %>,
+                        data: <%= Standing08.select("laangels").map {|a| a[:laangels]}.inspect %>,
                         color: '#FF002F'
                         }, 
                         
                         {
                         name: "LA Dodgers",
                         legendIndex : 15,
-                        data: <%= Standing11.select("ladodgers").map {|a| a[:ladodgers]}.inspect %>,
+                        data: <%= Standing08.select("ladodgers").map {|a| a[:ladodgers]}.inspect %>,
                         color: '#163591'
                         }, 
                         
                         {
                         name: "Milwaukee",
                         legendIndex : 16,
-                        data: <%= Standing11.select("milwaukee").map {|a| a[:milwaukee]}.inspect %>,
+                        data: <%= Standing08.select("milwaukee").map {|a| a[:milwaukee]}.inspect %>,
                         color: '#407AB8'
                         }, 
                         
                         {
                         name: "Minnesota",
                         legendIndex : 17,
-                        data: <%= Standing11.select("minnesota").map {|a| a[:minnesota]}.inspect %>,
+                        data: <%= Standing08.select("minnesota").map {|a| a[:minnesota]}.inspect %>,
                         color: '#9C001D'
                         },
                         
                         {
                         name: "NY Mets",
                         legendIndex : 18,
-                        data: <%= Standing11.select("nymets").map {|a| a[:nymets]}.inspect %>,
+                        data: <%= Standing08.select("nymets").map {|a| a[:nymets]}.inspect %>,
                         color: '#0097F5'
                         },
                         
@@ -1796,56 +1796,56 @@
                         name: "NY Yankees",
                         legendIndex : 19,
                         visible: true,
-                        data: <%= Standing11.select("nyyankees").map {|a| a[:nyyankees]}.inspect %>,
+                        data: <%= Standing08.select("nyyankees").map {|a| a[:nyyankees]}.inspect %>,
                         color: '#004175'
                         },
                         
                         {
                         name: "Oakland",
                         legendIndex : 20,
-                        data: <%= Standing11.select("oakland").map {|a| a[:oakland]}.inspect %>,
+                        data: <%= Standing08.select("oakland").map {|a| a[:oakland]}.inspect %>,
                         color: '#00731B',
                         }, 
                         
                         {
                         name: "Philadelphia",
                         legendIndex : 21,
-                        data: <%= Standing11.select("philadelphia").map {|a| a[:philadelphia]}.inspect %>,
+                        data: <%= Standing08.select("philadelphia").map {|a| a[:philadelphia]}.inspect %>,
                         color: '#FC0F7E'
                         }, 
                         
                         {
                         name: "Pittsburgh",
                         legendIndex : 22,
-                        data: <%= Standing11.select("pittsburgh").map {|a| a[:pittsburgh]}.inspect %>,
+                        data: <%= Standing08.select("pittsburgh").map {|a| a[:pittsburgh]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Seattle",
                         legendIndex : 23,
-                        data: <%= Standing11.select("seattle").map {|a| a[:seattle]}.inspect %>,
+                        data: <%= Standing08.select("seattle").map {|a| a[:seattle]}.inspect %>,
                         color: '#009FBF'
                         }, 
                         
                         {
                         name: "San Diego",
                         legendIndex : 24,
-                        data: <%= Standing11.select("sandiego").map {|a| a[:sandiego]}.inspect %>,
+                        data: <%= Standing08.select("sandiego").map {|a| a[:sandiego]}.inspect %>,
                         color: '#838579'
                         }, 
                         
                         {
                         name: "San Francisco",
                         legendIndex : 25,
-                        data: <%= Standing11.select("sanfrancisco").map {|a| a[:sanfrancisco]}.inspect %>,
+                        data: <%= Standing08.select("sanfrancisco").map {|a| a[:sanfrancisco]}.inspect %>,
                         color: '#FF9500'
                         },
                         
                         {
                         name: "St. Louis",
                         legendIndex : 26,
-                        data: <%= Standing11.select("stlouis").map {|a| a[:stlouis]}.inspect %>,
+                        data: <%= Standing08.select("stlouis").map {|a| a[:stlouis]}.inspect %>,
                         color: '#87C0E6'
                         },
                         
@@ -1853,14 +1853,14 @@
                         name: "Tampa Bay",
                         legendIndex : 27,
                         visible: true,
-                        data: <%= Standing11.select("tampabay").map {|a| a[:tampabay]}.inspect %>,
+                        data: <%= Standing08.select("tampabay").map {|a| a[:tampabay]}.inspect %>,
                         color: '#3A94DE'
                         }, 
                         
                         {
                         name: "Texas",
                         legendIndex : 28,
-                        data: <%= Standing11.select("texas").map {|a| a[:texas]}.inspect %>,
+                        data: <%= Standing08.select("texas").map {|a| a[:texas]}.inspect %>,
                         color: '#008CFF'
                         },
                         
@@ -1868,14 +1868,14 @@
                         name: "Toronto",
                         legendIndex : 29,
                         visible: true,
-                        data: <%= Standing11.select("toronto").map {|a| a[:toronto]}.inspect %>,
+                        data: <%= Standing08.select("toronto").map {|a| a[:toronto]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Washington",
                         legendIndex : 30,
-                        data: <%= Standing11.select("washington").map {|a| a[:washington]}.inspect %>,
+                        data: <%= Standing08.select("washington").map {|a| a[:washington]}.inspect %>,
                         color: '#324B94'
                   }]
             
@@ -1894,7 +1894,7 @@
                         animation: false
                   },
                   line : { pointInterval:  <%= 1.day * 1000 %>,
-                               pointStart:  Date.UTC(2011, 3, 1),
+                               pointStart:  Date.UTC(2008, 2, 26),
                              marker: { symbol: 'circle',
                                        radius: 3, },
                          visible: false
@@ -1926,209 +1926,209 @@
                   [{
                         name: "Arizona",
                         legendIndex : 1,
-                        data: <%= Standing11.select("arizona").map {|a| a[:arizona]}.inspect %>,
+                        data: <%= Standing08.select("arizona").map {|a| a[:arizona]}.inspect %>,
                         color: '#A10028'
                         }, 
                         
                         {
                         name: "Atlanta",
                         legendIndex : 2,
-                        data: <%= Standing11.select("atlanta").map {|a| a[:atlanta]}.inspect %>,
+                        data: <%= Standing08.select("atlanta").map {|a| a[:atlanta]}.inspect %>,
                         color: '#A10028'
                         },
                         
                         {
                         name: "Baltimore",
                         legendIndex : 3,
-                        data: <%= Standing11.select("baltimore").map {|a| a[:baltimore]}.inspect %>,
+                        data: <%= Standing08.select("baltimore").map {|a| a[:baltimore]}.inspect %>,
                         color: '#FFA200'
                         },
                         
                         {
                         name: "Boston",
                         legendIndex : 4,
-                        data: <%= Standing11.select("boston").map {|a| a[:boston]}.inspect %>,
+                        data: <%= Standing08.select("boston").map {|a| a[:boston]}.inspect %>,
                         color: '#9C001D'
                         }, 
                         {
                         name: "Chicago Cubs",
                         legendIndex : 5,
-                        data: <%= Standing11.select("chicagocubs").map {|a| a[:chicagocubs]}.inspect %>,
+                        data: <%= Standing08.select("chicagocubs").map {|a| a[:chicagocubs]}.inspect %>,
                         color: '#3672FF'
                         }, 
                         
                         {
                         name: "Chicago Sox",
                         legendIndex : 6,
-                        data: <%= Standing11.select("chicagosox").map {|a| a[:chicagosox]}.inspect %>,
+                        data: <%= Standing08.select("chicagosox").map {|a| a[:chicagosox]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Cincinnati",
                         legendIndex : 7,
-                        data: <%= Standing11.select("cincinnati").map {|a| a[:cincinnati]}.inspect %>,
+                        data: <%= Standing08.select("cincinnati").map {|a| a[:cincinnati]}.inspect %>,
                         color: '#CC0018',
                         }, 
                         
                         {
                         name: "Cleveland",
                         legendIndex : 8,
-                        data: <%= Standing11.select("cleveland").map {|a| a[:cleveland]}.inspect %>,
+                        data: <%= Standing08.select("cleveland").map {|a| a[:cleveland]}.inspect %>,
                         color: '#004175',
                         }, 
                         
                         {
                         name: "Colorado",
                         legendIndex : 9,
-                        data: <%= Standing11.select("colorado").map {|a| a[:colorado]}.inspect %>,
+                        data: <%= Standing08.select("colorado").map {|a| a[:colorado]}.inspect %>,
                         color: '#7B0C91',
                         },
                         
                         {
                         name: "Detroit",
                         legendIndex : 10,
-                        data: <%= Standing11.select("detroit").map {|a| a[:detroit]}.inspect %>,
+                        data: <%= Standing08.select("detroit").map {|a| a[:detroit]}.inspect %>,
                         color: '#FFA200'  
                         },
                         
                         {
                         name: "Florida",
                         legendIndex : 11,
-                        data: <%= Standing11.select("florida").map {|a| a[:florida]}.inspect %>,
+                        data: <%= Standing08.select("florida").map {|a| a[:florida]}.inspect %>,
                         color: '#00C3D9'
                         }, 
                         
                         {
                         name: "Houston",
                         legendIndex : 12 ,
-                        data: <%= Standing11.select("houston").map {|a| a[:houston]}.inspect %>,
+                        data: <%= Standing08.select("houston").map {|a| a[:houston]}.inspect %>,
                         color: '#FF9500'  
                         },
                         
                         {
                         name: "Kansas City",
                         legendIndex : 13,
-                        data: <%= Standing11.select("kansascity").map {|a| a[:kansascity]}.inspect %>,
+                        data: <%= Standing08.select("kansascity").map {|a| a[:kansascity]}.inspect %>,
                         color: '#3A94DE'
                         }, 
                         
                         {
                         name: "LA Angels",
                         legendIndex : 14,
-                        data: <%= Standing11.select("laangels").map {|a| a[:laangels]}.inspect %>,
+                        data: <%= Standing08.select("laangels").map {|a| a[:laangels]}.inspect %>,
                         color: '#FF002F'
                         }, 
                         
                         {
                         name: "LA Dodgers",
                         legendIndex : 15,
-                        data: <%= Standing11.select("ladodgers").map {|a| a[:ladodgers]}.inspect %>,
+                        data: <%= Standing08.select("ladodgers").map {|a| a[:ladodgers]}.inspect %>,
                         color: '#163591'
                         }, 
                         
                         {
                         name: "Milwaukee",
                         legendIndex : 16,
-                        data: <%= Standing11.select("milwaukee").map {|a| a[:milwaukee]}.inspect %>,
+                        data: <%= Standing08.select("milwaukee").map {|a| a[:milwaukee]}.inspect %>,
                         color: '#407AB8'
                         }, 
                         
                         {
                         name: "Minnesota",
                         legendIndex : 17,
-                        data: <%= Standing11.select("minnesota").map {|a| a[:minnesota]}.inspect %>,
+                        data: <%= Standing08.select("minnesota").map {|a| a[:minnesota]}.inspect %>,
                         color: '#9C001D'
                         },
                         
                         {
                         name: "NY Mets",
                         legendIndex : 18,
-                        data: <%= Standing11.select("nymets").map {|a| a[:nymets]}.inspect %>,
+                        data: <%= Standing08.select("nymets").map {|a| a[:nymets]}.inspect %>,
                         color: '#0097F5'
                         },
                         
                         {
                         name: "NY Yankees",
                         legendIndex : 19,
-                        data: <%= Standing11.select("nyyankees").map {|a| a[:nyyankees]}.inspect %>,
+                        data: <%= Standing08.select("nyyankees").map {|a| a[:nyyankees]}.inspect %>,
                         color: '#004175'
                         },
                         
                         {
                         name: "Oakland",
                         legendIndex : 20,
-                        data: <%= Standing11.select("oakland").map {|a| a[:oakland]}.inspect %>,
+                        data: <%= Standing08.select("oakland").map {|a| a[:oakland]}.inspect %>,
                         color: '#00731B',
                         }, 
                         
                         {
                         name: "Philadelphia",
                         legendIndex : 21,
-                        data: <%= Standing11.select("philadelphia").map {|a| a[:philadelphia]}.inspect %>,
+                        data: <%= Standing08.select("philadelphia").map {|a| a[:philadelphia]}.inspect %>,
                         color: '#FC0F7E'
                         }, 
                         
                         {
                         name: "Pittsburgh",
                         legendIndex : 22,
-                        data: <%= Standing11.select("pittsburgh").map {|a| a[:pittsburgh]}.inspect %>,
+                        data: <%= Standing08.select("pittsburgh").map {|a| a[:pittsburgh]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Seattle",
                         legendIndex : 23,
-                        data: <%= Standing11.select("seattle").map {|a| a[:seattle]}.inspect %>,
+                        data: <%= Standing08.select("seattle").map {|a| a[:seattle]}.inspect %>,
                         color: '#009FBF'
                         }, 
                         
                         {
                         name: "San Diego",
                         legendIndex : 24,
-                        data: <%= Standing11.select("sandiego").map {|a| a[:sandiego]}.inspect %>,
+                        data: <%= Standing08.select("sandiego").map {|a| a[:sandiego]}.inspect %>,
                         color: '#838579'
                         }, 
                         
                         {
                         name: "San Francisco",
                         legendIndex : 25,
-                        data: <%= Standing11.select("sanfrancisco").map {|a| a[:sanfrancisco]}.inspect %>,
+                        data: <%= Standing08.select("sanfrancisco").map {|a| a[:sanfrancisco]}.inspect %>,
                         color: '#FF9500'
                         },
                         
                         {
                         name: "St. Louis",
                         legendIndex : 26,
-                        data: <%= Standing11.select("stlouis").map {|a| a[:stlouis]}.inspect %>,
+                        data: <%= Standing08.select("stlouis").map {|a| a[:stlouis]}.inspect %>,
                         color: '#87C0E6'
                         },
                         
                         {
                         name: "Tampa Bay",
                         legendIndex : 27,
-                        data: <%= Standing11.select("tampabay").map {|a| a[:tampabay]}.inspect %>,
+                        data: <%= Standing08.select("tampabay").map {|a| a[:tampabay]}.inspect %>,
                         color: '#3A94DE'
                         }, 
                         
                         {
                         name: "Texas",
                         legendIndex : 28,
-                        data: <%= Standing11.select("texas").map {|a| a[:texas]}.inspect %>,
+                        data: <%= Standing08.select("texas").map {|a| a[:texas]}.inspect %>,
                         color: '#008CFF'
                         },
                         
                         {
                         name: "Toronto",
                         legendIndex : 29,
-                        data: <%= Standing11.select("toronto").map {|a| a[:toronto]}.inspect %>,
+                        data: <%= Standing08.select("toronto").map {|a| a[:toronto]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Washington",
                         legendIndex : 30,
-                        data: <%= Standing11.select("washington").map {|a| a[:washington]}.inspect %>,
+                        data: <%= Standing08.select("washington").map {|a| a[:washington]}.inspect %>,
                         color: '#324B94'
                         }
                   ]
@@ -2148,7 +2148,7 @@
                         animation: false
                   },
                   line : { pointInterval:  <%= 1.day * 1000 %>,
-                               pointStart:  Date.UTC(2011, 3, 1),
+                               pointStart:  Date.UTC(2008, 2, 26),
                              marker: { symbol: 'circle',
                                        radius: 3, },
         visible: false
@@ -2180,215 +2180,214 @@
                   [{
                         name: "Arizona",
                         legendIndex : 1,
-                        
-                        data: <%= Standing11.select("arizona").map {|a| a[:arizona]}.inspect %>,
+                        data: <%= Standing08.select("arizona").map {|a| a[:arizona]}.inspect %>,
                         color: '#A10028'
                         }, 
                         
                         {
                         name: "Atlanta",
                         legendIndex : 2,
-                        visible: true,
-                        data: <%= Standing11.select("atlanta").map {|a| a[:atlanta]}.inspect %>,
+                        data: <%= Standing08.select("atlanta").map {|a| a[:atlanta]}.inspect %>,
                         color: '#A10028'
                         },
                         
                         {
                         name: "Baltimore",
                         legendIndex : 3,
-                        data: <%= Standing11.select("baltimore").map {|a| a[:baltimore]}.inspect %>,
+                        data: <%= Standing08.select("baltimore").map {|a| a[:baltimore]}.inspect %>,
                         color: '#FFA200'
                         },
                         
                         {
                         name: "Boston",
                         legendIndex : 4,
-                        data: <%= Standing11.select("boston").map {|a| a[:boston]}.inspect %>,
+                        data: <%= Standing08.select("boston").map {|a| a[:boston]}.inspect %>,
                         color: '#9C001D'
                         }, 
                         
                         {
                         name: "Chicago Cubs",
                         legendIndex : 5,
-                        data: <%= Standing11.select("chicagocubs").map {|a| a[:chicagocubs]}.inspect %>,
+                        data: <%= Standing08.select("chicagocubs").map {|a| a[:chicagocubs]}.inspect %>,
                         color: '#3672FF'
                         }, 
                         
                         {
                         name: "Chicago Sox",
                         legendIndex : 6,
-                        data: <%= Standing11.select("chicagosox").map {|a| a[:chicagosox]}.inspect %>,
+                        data: <%= Standing08.select("chicagosox").map {|a| a[:chicagosox]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Cincinnati",
                         legendIndex : 7,
-                        data: <%= Standing11.select("cincinnati").map {|a| a[:cincinnati]}.inspect %>,
+                        data: <%= Standing08.select("cincinnati").map {|a| a[:cincinnati]}.inspect %>,
                         color: '#CC0018',
                         }, 
                         
                         {
                         name: "Cleveland",
                         legendIndex : 8,
-                        data: <%= Standing11.select("cleveland").map {|a| a[:cleveland]}.inspect %>,
+                        data: <%= Standing08.select("cleveland").map {|a| a[:cleveland]}.inspect %>,
                         color: '#004175',
                         }, 
                         
                         {
                         name: "Colorado",
                         legendIndex : 9,
-                        data: <%= Standing11.select("colorado").map {|a| a[:colorado]}.inspect %>,
+                        data: <%= Standing08.select("colorado").map {|a| a[:colorado]}.inspect %>,
                         color: '#7B0C91',
                         },
                         
                         {
                         name: "Detroit",
                         legendIndex : 10,
-                        data: <%= Standing11.select("detroit").map {|a| a[:detroit]}.inspect %>,
+                        data: <%= Standing08.select("detroit").map {|a| a[:detroit]}.inspect %>,
                         color: '#FFA200'  
                         },
                         
                         {
                         name: "Florida",
                         legendIndex : 11,
-                        data: <%= Standing11.select("florida").map {|a| a[:florida]}.inspect %>,
+                        data: <%= Standing08.select("florida").map {|a| a[:florida]}.inspect %>,
                         color: '#00C3D9'
                         }, 
                         
                         {
                         name: "Houston",
+                        visible: true,
                         legendIndex : 12 ,
-                        data: <%= Standing11.select("houston").map {|a| a[:houston]}.inspect %>,
+                        data: <%= Standing08.select("houston").map {|a| a[:houston]}.inspect %>,
                         color: '#FF9500'  
                         },
                         
                         {
                         name: "Kansas City",
                         legendIndex : 13,
-                        data: <%= Standing11.select("kansascity").map {|a| a[:kansascity]}.inspect %>,
+                        data: <%= Standing08.select("kansascity").map {|a| a[:kansascity]}.inspect %>,
                         color: '#3A94DE'
                         }, 
                         
                         {
                         name: "LA Angels",
                         legendIndex : 14,
-                        data: <%= Standing11.select("laangels").map {|a| a[:laangels]}.inspect %>,
+                        data: <%= Standing08.select("laangels").map {|a| a[:laangels]}.inspect %>,
                         color: '#FF002F'
                         }, 
                         
                         {
                         name: "LA Dodgers",
                         legendIndex : 15,
-                        data: <%= Standing11.select("ladodgers").map {|a| a[:ladodgers]}.inspect %>,
+                        data: <%= Standing08.select("ladodgers").map {|a| a[:ladodgers]}.inspect %>,
                         color: '#163591'
                         }, 
                         
                         {
                         name: "Milwaukee",
+                        visible: true,
                         legendIndex : 16,
-                        data: <%= Standing11.select("milwaukee").map {|a| a[:milwaukee]}.inspect %>,
+                        data: <%= Standing08.select("milwaukee").map {|a| a[:milwaukee]}.inspect %>,
                         color: '#407AB8'
                         }, 
                         
                         {
                         name: "Minnesota",
                         legendIndex : 17,
-                        data: <%= Standing11.select("minnesota").map {|a| a[:minnesota]}.inspect %>,
+                        data: <%= Standing08.select("minnesota").map {|a| a[:minnesota]}.inspect %>,
                         color: '#9C001D'
                         },
                         
                         {
                         name: "NY Mets",
+                        visible: true,
                         legendIndex : 18,
-                        data: <%= Standing11.select("nymets").map {|a| a[:nymets]}.inspect %>,
+                        data: <%= Standing08.select("nymets").map {|a| a[:nymets]}.inspect %>,
                         color: '#0097F5'
                         },
                         
                         {
                         name: "NY Yankees",
                         legendIndex : 19,
-                        data: <%= Standing11.select("nyyankees").map {|a| a[:nyyankees]}.inspect %>,
+                        data: <%= Standing08.select("nyyankees").map {|a| a[:nyyankees]}.inspect %>,
                         color: '#004175'
                         },
                         
                         {
                         name: "Oakland",
                         legendIndex : 20,
-                        data: <%= Standing11.select("oakland").map {|a| a[:oakland]}.inspect %>,
+                        data: <%= Standing08.select("oakland").map {|a| a[:oakland]}.inspect %>,
                         color: '#00731B',
                         }, 
                         
                         {
                         name: "Philadelphia",
                         legendIndex : 21,
-                        data: <%= Standing11.select("philadelphia").map {|a| a[:philadelphia]}.inspect %>,
+                        data: <%= Standing08.select("philadelphia").map {|a| a[:philadelphia]}.inspect %>,
                         color: '#FC0F7E'
                         }, 
                         
                         {
                         name: "Pittsburgh",
                         legendIndex : 22,
-                        data: <%= Standing11.select("pittsburgh").map {|a| a[:pittsburgh]}.inspect %>,
+                        data: <%= Standing08.select("pittsburgh").map {|a| a[:pittsburgh]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Seattle",
                         legendIndex : 23,
-                        data: <%= Standing11.select("seattle").map {|a| a[:seattle]}.inspect %>,
+                        data: <%= Standing08.select("seattle").map {|a| a[:seattle]}.inspect %>,
                         color: '#009FBF'
                         }, 
                         
                         {
                         name: "San Diego",
                         legendIndex : 24,
-                        
-                        data: <%= Standing11.select("sandiego").map {|a| a[:sandiego]}.inspect %>,
+                        data: <%= Standing08.select("sandiego").map {|a| a[:sandiego]}.inspect %>,
                         color: '#838579'
                         }, 
                         
                         {
-                        name: "San Francisco",
+                        name: "San Francisco",                      
                         legendIndex : 25,
-                        visible: true,
-                        data: <%= Standing11.select("sanfrancisco").map {|a| a[:sanfrancisco]}.inspect %>,
+                        data: <%= Standing08.select("sanfrancisco").map {|a| a[:sanfrancisco]}.inspect %>,
                         color: '#FF9500'
                         },
                         
                         {
                         name: "St. Louis",
-                        legendIndex : 26,
                         visible: true,
-                        data: <%= Standing11.select("stlouis").map {|a| a[:stlouis]}.inspect %>,
+                        legendIndex : 26,
+                        data: <%= Standing08.select("stlouis").map {|a| a[:stlouis]}.inspect %>,
                         color: '#87C0E6'
                         },
                         
                         {
                         name: "Tampa Bay",
                         legendIndex : 27,
-                        data: <%= Standing11.select("tampabay").map {|a| a[:tampabay]}.inspect %>,
+                        data: <%= Standing08.select("tampabay").map {|a| a[:tampabay]}.inspect %>,
                         color: '#3A94DE'
                         }, 
                         
                         {
                         name: "Texas",
                         legendIndex : 28,
-                        data: <%= Standing11.select("texas").map {|a| a[:texas]}.inspect %>,
+                        data: <%= Standing08.select("texas").map {|a| a[:texas]}.inspect %>,
                         color: '#008CFF'
                         },
                         
                         {
                         name: "Toronto",
                         legendIndex : 29,
-                        data: <%= Standing11.select("toronto").map {|a| a[:toronto]}.inspect %>,
+                        data: <%= Standing08.select("toronto").map {|a| a[:toronto]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Washington",
                         legendIndex : 30,
-                        data: <%= Standing11.select("washington").map {|a| a[:washington]}.inspect %>,
+                        data: <%= Standing08.select("washington").map {|a| a[:washington]}.inspect %>,
                         color: '#324B94'
                   }]
                   
@@ -2407,7 +2406,7 @@
                         animation: false
                   },
                   line : { pointInterval:  <%= 1.day * 1000 %>,
-                               pointStart:  Date.UTC(2011, 3, 1),
+                               pointStart:  Date.UTC(2008, 2, 26),
                              marker: { symbol: 'circle',
                                        radius: 3, },
                          visible: false
@@ -2439,21 +2438,21 @@
                   [{
                         name: "Arizona",
                         legendIndex : 1,
-                        data: <%= Standing11.select("arizona").map {|a| a[:arizona]}.inspect %>,
+                        data: <%= Standing08.select("arizona").map {|a| a[:arizona]}.inspect %>,
                         color: '#A10028'
                         }, 
                         
                         {
                         name: "Atlanta",
                         legendIndex : 2,
-                        data: <%= Standing11.select("atlanta").map {|a| a[:atlanta]}.inspect %>,
+                        data: <%= Standing08.select("atlanta").map {|a| a[:atlanta]}.inspect %>,
                         color: '#A10028'
                         },
                         
                         {
                         name: "Baltimore",
                         legendIndex : 3,
-                        data: <%= Standing11.select("baltimore").map {|a| a[:baltimore]}.inspect %>,
+                        data: <%= Standing08.select("baltimore").map {|a| a[:baltimore]}.inspect %>,
                         color: '#FFA200'
                         },
                         
@@ -2461,190 +2460,190 @@
                         name: "Boston",
                         legendIndex : 4,
                         visible: true,
-                        data: <%= Standing11.select("boston").map {|a| a[:boston]}.inspect %>,
+                        data: <%= Standing08.select("boston").map {|a| a[:boston]}.inspect %>,
                         color: '#9C001D'
                         }, 
                         {
                         name: "Chicago Cubs",
                         legendIndex : 5,
-                        data: <%= Standing11.select("chicagocubs").map {|a| a[:chicagocubs]}.inspect %>,
+                        data: <%= Standing08.select("chicagocubs").map {|a| a[:chicagocubs]}.inspect %>,
                         color: '#3672FF'
                         }, 
                         
                         {
                         name: "Chicago Sox",
                         legendIndex : 6,
-                        data: <%= Standing11.select("chicagosox").map {|a| a[:chicagosox]}.inspect %>,
+                        data: <%= Standing08.select("chicagosox").map {|a| a[:chicagosox]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Cincinnati",
                         legendIndex : 7,
-                        data: <%= Standing11.select("cincinnati").map {|a| a[:cincinnati]}.inspect %>,
+                        data: <%= Standing08.select("cincinnati").map {|a| a[:cincinnati]}.inspect %>,
                         color: '#CC0018',
                         }, 
                         
                         {
                         name: "Cleveland",
                         legendIndex : 8,
-                        data: <%= Standing11.select("cleveland").map {|a| a[:cleveland]}.inspect %>,
+                        data: <%= Standing08.select("cleveland").map {|a| a[:cleveland]}.inspect %>,
                         color: '#004175',
                         }, 
                         
                         {
                         name: "Colorado",
                         legendIndex : 9,
-                        data: <%= Standing11.select("colorado").map {|a| a[:colorado]}.inspect %>,
+                        data: <%= Standing08.select("colorado").map {|a| a[:colorado]}.inspect %>,
                         color: '#7B0C91',
                         },
                         
                         {
                         name: "Detroit",
                         legendIndex : 10,
-                        data: <%= Standing11.select("detroit").map {|a| a[:detroit]}.inspect %>,
+                        data: <%= Standing08.select("detroit").map {|a| a[:detroit]}.inspect %>,
                         color: '#004175'  
                         },
                         
                         {
                         name: "Florida",
                         legendIndex : 11,
-                        data: <%= Standing11.select("florida").map {|a| a[:florida]}.inspect %>,
+                        data: <%= Standing08.select("florida").map {|a| a[:florida]}.inspect %>,
                         color: '#00C3D9'
                         }, 
                         
                         {
                         name: "Houston",
                         legendIndex : 12 ,
-                        data: <%= Standing11.select("houston").map {|a| a[:houston]}.inspect %>,
+                        data: <%= Standing08.select("houston").map {|a| a[:houston]}.inspect %>,
                         color: '#FF9500'  
                         },
                         
                         {
                         name: "Kansas City",
                         legendIndex : 13,
-                        data: <%= Standing11.select("kansascity").map {|a| a[:kansascity]}.inspect %>,
+                        data: <%= Standing08.select("kansascity").map {|a| a[:kansascity]}.inspect %>,
                         color: '#3A94DE'
                         }, 
                         
                         {
                         name: "LA Angels",
                         legendIndex : 14,
-                        visible: true,
-                        data: <%= Standing11.select("laangels").map {|a| a[:laangels]}.inspect %>,
+                        data: <%= Standing08.select("laangels").map {|a| a[:laangels]}.inspect %>,
                         color: '#FF002F'
                         }, 
                         
                         {
                         name: "LA Dodgers",
                         legendIndex : 15,
-                        data: <%= Standing11.select("ladodgers").map {|a| a[:ladodgers]}.inspect %>,
+                        data: <%= Standing08.select("ladodgers").map {|a| a[:ladodgers]}.inspect %>,
                         color: '#163591'
                         }, 
                         
                         {
                         name: "Milwaukee",
                         legendIndex : 16,
-                        data: <%= Standing11.select("milwaukee").map {|a| a[:milwaukee]}.inspect %>,
+                        data: <%= Standing08.select("milwaukee").map {|a| a[:milwaukee]}.inspect %>,
                         color: '#407AB8'
                         }, 
                         
                         {
                         name: "Minnesota",
-                        legendIndex : 17,
-                        data: <%= Standing11.select("minnesota").map {|a| a[:minnesota]}.inspect %>,
+                        legendIndex : 17,                       
+                        visible: true,
+                        data: <%= Standing08.select("minnesota").map {|a| a[:minnesota]}.inspect %>,
                         color: '#9C001D'
                         },
                         
                         {
                         name: "NY Mets",
                         legendIndex : 18,
-                        data: <%= Standing11.select("nymets").map {|a| a[:nymets]}.inspect %>,
+                        data: <%= Standing08.select("nymets").map {|a| a[:nymets]}.inspect %>,
                         color: '#0097F5'
                         },
                         
                         {
                         name: "NY Yankees",
+                        visible: true,
                         legendIndex : 19,
-                        data: <%= Standing11.select("nyyankees").map {|a| a[:nyyankees]}.inspect %>,
+                        data: <%= Standing08.select("nyyankees").map {|a| a[:nyyankees]}.inspect %>,
                         color: '#004175'
                         },
                         
                         {
                         name: "Oakland",
                         legendIndex : 20,
-                        data: <%= Standing11.select("oakland").map {|a| a[:oakland]}.inspect %>,
+                        data: <%= Standing08.select("oakland").map {|a| a[:oakland]}.inspect %>,
                         color: '#00731B',
                         }, 
                         
                         {
                         name: "Philadelphia",
                         legendIndex : 21,
-                        data: <%= Standing11.select("philadelphia").map {|a| a[:philadelphia]}.inspect %>,
+                        data: <%= Standing08.select("philadelphia").map {|a| a[:philadelphia]}.inspect %>,
                         color: '#FC0F7E'
                         }, 
                         
                         {
                         name: "Pittsburgh",
                         legendIndex : 22,
-                        data: <%= Standing11.select("pittsburgh").map {|a| a[:pittsburgh]}.inspect %>,
+                        data: <%= Standing08.select("pittsburgh").map {|a| a[:pittsburgh]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Seattle",
                         legendIndex : 23,
-                        data: <%= Standing11.select("seattle").map {|a| a[:seattle]}.inspect %>,
+                        data: <%= Standing08.select("seattle").map {|a| a[:seattle]}.inspect %>,
                         color: '#009FBF'
                         }, 
                         
                         {
                         name: "San Diego",
                         legendIndex : 24,
-                        data: <%= Standing11.select("sandiego").map {|a| a[:sandiego]}.inspect %>,
+                        data: <%= Standing08.select("sandiego").map {|a| a[:sandiego]}.inspect %>,
                         color: '#838579'
                         }, 
                         
                         {
                         name: "San Francisco",
                         legendIndex : 25,
-                        data: <%= Standing11.select("sanfrancisco").map {|a| a[:sanfrancisco]}.inspect %>,
+                        data: <%= Standing08.select("sanfrancisco").map {|a| a[:sanfrancisco]}.inspect %>,
                         color: '#FF9500'
                         },
                         
                         {
                         name: "St. Louis",
                         legendIndex : 26,
-                        data: <%= Standing11.select("stlouis").map {|a| a[:stlouis]}.inspect %>,
+                        data: <%= Standing08.select("stlouis").map {|a| a[:stlouis]}.inspect %>,
                         color: '#87C0E6'
                         },
                         
                         {
                         name: "Tampa Bay",
                         legendIndex : 27,
-                        visible: true,
-                        data: <%= Standing11.select("tampabay").map {|a| a[:tampabay]}.inspect %>,
+                        data: <%= Standing08.select("tampabay").map {|a| a[:tampabay]}.inspect %>,
                         color: '#3A94DE'
                         }, 
                         
                         {
                         name: "Texas",
                         legendIndex : 28,
-                        data: <%= Standing11.select("texas").map {|a| a[:texas]}.inspect %>,
+                        data: <%= Standing08.select("texas").map {|a| a[:texas]}.inspect %>,
                         color: '#008CFF'
                         },
                         
                         {
                         name: "Toronto",
                         legendIndex : 29,
-                        data: <%= Standing11.select("toronto").map {|a| a[:toronto]}.inspect %>,
+                        data: <%= Standing08.select("toronto").map {|a| a[:toronto]}.inspect %>,
                         color: '#000000'
                         },
                         
                         {
                         name: "Washington",
                         legendIndex : 30,
-                        data: <%= Standing11.select("washington").map {|a| a[:washington]}.inspect %>,
+                        data: <%= Standing08.select("washington").map {|a| a[:washington]}.inspect %>,
                         color: '#324B94'
                         }
                   ]

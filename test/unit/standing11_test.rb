@@ -2,7 +2,7 @@
 #
 # Table name: standing11s
 #
-#  id           :integer          not null, primary key
+#  id           :integer          primary key
 #  arizona      :integer
 #  atlanta      :integer
 #  baltimore    :integer
@@ -33,8 +33,6 @@
 #  texas        :integer
 #  toronto      :integer
 #  washington   :integer
-#  created_at   :datetime         not null
-#  updated_at   :datetime         not null
 #
 
 require 'test_helper'

@@ -1,8 +1,8 @@
 # == Schema Information
 #
-# Table name: standing11s
+# Table name: standing08s
 #
-#  id           :integer          primary key
+#  id           :integer          not null, primary key
 #  arizona      :integer
 #  atlanta      :integer
 #  baltimore    :integer
@@ -35,14 +35,10 @@
 #  washington   :integer
 #
 
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+require 'test_helper'
 
-# This model initially had no columns defined.  If you add columns to the
-# model remove the '{}' from the fixture names and add the columns immediately
-# below each fixture, per the syntax in the comments below
-#
-one: {}
-# column: value
-#
-two: {}
-#  column: value
+class Standing08Test < ActiveSupport::TestCase
+  # test "the truth" do
+  #   assert true
+  # end
+end

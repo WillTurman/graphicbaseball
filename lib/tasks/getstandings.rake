@@ -5,7 +5,7 @@ desc "standings scrape"
 
 task :standings => :environment do
 
-for x in 901..930
+for x in 1001..1005
 
 
 plusminus = Array.new
@@ -13,7 +13,7 @@ plusminus [0..29] = 0
 
 
 
-url = "http://espn.go.com/mlb/standings/_/date/20110#{x}"
+url = "http://espn.go.com/mlb/standings/_/date/2008#{x}"
 
 doc = Nokogiri::HTML(open(url))
 puts doc.at_css("title").text
@@ -118,7 +118,7 @@ doc.css("tr").each do |row|
 end    
     
 
-s = Standing11.new( :arizona => plusminus[0], :atlanta => plusminus[1], :baltimore => plusminus[2], :boston => plusminus[3], :chicagocubs => plusminus[4], :chicagosox => plusminus[5], :cincinnati => plusminus[6], :cleveland => plusminus[7], :colorado => plusminus[8], :detroit => plusminus[9], :florida => plusminus[10], :houston => plusminus[11], :kansascity => plusminus[12], :laangels => plusminus[13], :ladodgers => plusminus[14], :milwaukee => plusminus[15], :minnesota => plusminus[16], :nymets => plusminus[17], :nyyankees => plusminus[18], :oakland => plusminus[19], :philadelphia => plusminus[20], :pittsburgh => plusminus[21], :sandiego => plusminus[22], :sanfrancisco => plusminus[23], :seattle => plusminus[24], :stlouis => plusminus[25], :tampabay => plusminus[26], :texas => plusminus[27], :toronto => plusminus[28], :washington => plusminus[29])
+s = Standing08.new( :arizona => plusminus[0], :atlanta => plusminus[1], :baltimore => plusminus[2], :boston => plusminus[3], :chicagocubs => plusminus[4], :chicagosox => plusminus[5], :cincinnati => plusminus[6], :cleveland => plusminus[7], :colorado => plusminus[8], :detroit => plusminus[9], :florida => plusminus[10], :houston => plusminus[11], :kansascity => plusminus[12], :laangels => plusminus[13], :ladodgers => plusminus[14], :milwaukee => plusminus[15], :minnesota => plusminus[16], :nymets => plusminus[17], :nyyankees => plusminus[18], :oakland => plusminus[19], :philadelphia => plusminus[20], :pittsburgh => plusminus[21], :sandiego => plusminus[22], :sanfrancisco => plusminus[23], :seattle => plusminus[24], :stlouis => plusminus[25], :tampabay => plusminus[26], :texas => plusminus[27], :toronto => plusminus[28], :washington => plusminus[29])
 s.save
 	
 puts x
@@ -132,7 +132,7 @@ task :firststanding => :environment do
 
     
 
-s = Standing11.new( :arizona => 0, :atlanta => 0, :baltimore => 0, :boston => 0, :chicagocubs => 0, :chicagosox => 0, :cincinnati => 0, :cleveland => 0, :colorado => 0, :detroit => 0, :florida => 0, :houston => 0, :kansascity => 0, :laangels => 0, :ladodgers => 0, :milwaukee => 0, :minnesota => 0, :nymets => 0, :nyyankees => 0, :oakland => 0, :philadelphia => 0, :pittsburgh => 0, :sandiego => 0, :sanfrancisco => 0, :seattle => 0, :stlouis => 0, :tampabay => 0, :texas => 0, :toronto => 0, :washington => 0)
+s = Standing08.new( :arizona => 0, :atlanta => 0, :baltimore => 0, :boston => 0, :chicagocubs => 0, :chicagosox => 0, :cincinnati => 0, :cleveland => 0, :colorado => 0, :detroit => 0, :florida => 0, :houston => 0, :kansascity => 0, :laangels => 0, :ladodgers => 0, :milwaukee => 0, :minnesota => 0, :nymets => 0, :nyyankees => 0, :oakland => 0, :philadelphia => 0, :pittsburgh => 0, :sandiego => 0, :sanfrancisco => 0, :seattle => 0, :stlouis => 0, :tampabay => 0, :texas => 0, :toronto => 0, :washington => 0)
 s.save
 	
 puts s

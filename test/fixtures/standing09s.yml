@@ -1,8 +1,8 @@
 # == Schema Information
 #
-# Table name: standing11s
+# Table name: standing09s
 #
-#  id           :integer          primary key
+#  id           :integer          not null, primary key
 #  arizona      :integer
 #  atlanta      :integer
 #  baltimore    :integer
