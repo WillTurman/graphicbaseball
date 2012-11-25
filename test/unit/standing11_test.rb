@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: standing12s
+# Table name: standing11s
 #
 #  id           :integer          not null, primary key
 #  arizona      :integer
@@ -13,7 +13,7 @@
 #  cleveland    :integer
 #  colorado     :integer
 #  detroit      :integer
-#  miami        :integer
+#  florida      :integer
 #  houston      :integer
 #  kansascity   :integer
 #  laangels     :integer
@@ -33,11 +33,13 @@
 #  texas        :integer
 #  toronto      :integer
 #  washington   :integer
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
 #
 
 require 'test_helper'
 
-class Standing12Test < ActiveSupport::TestCase
+class Standing11Test < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

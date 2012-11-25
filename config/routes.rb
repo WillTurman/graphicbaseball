@@ -2,6 +2,7 @@ Graphicbaseball::Application.routes.draw do
   root to: 'pages#home'
 
   match '/mlb2012', to: 'pages#mlb2012'
+  match '/mlb2011', to: 'pages#mlb2011'
   match '/chart', to: 'pages#chart'
   resources :standing12s
 

@@ -5,6 +5,9 @@ class PagesController < ApplicationController
   def mlb2012
   end
 
+  def mlb2011
+  end
+
   def chart 
   end
 end

@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: standing12s
+# Table name: standing11s
 #
 #  id           :integer          not null, primary key
 #  arizona      :integer
@@ -13,7 +13,7 @@
 #  cleveland    :integer
 #  colorado     :integer
 #  detroit      :integer
-#  miami        :integer
+#  florida      :integer
 #  houston      :integer
 #  kansascity   :integer
 #  laangels     :integer
@@ -33,12 +33,12 @@
 #  texas        :integer
 #  toronto      :integer
 #  washington   :integer
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
 #
 
-require 'test_helper'
+class Standing11 < ActiveRecord::Base
 
-class Standing12Test < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  attr_accessible :id, :arizona, :atlanta, :baltimore, :boston, :chicagocubs, :chicagosox, :cincinnati, :cleveland, :colorado, :detroit, :florida, :houston, :kansascity, :laangels, :ladodgers, :milwaukee, :minnesota, :nymets, :nyyankees, :oakland, :philadelphia, :pittsburgh, :sandiego, :sanfrancisco, :seattle, :stlouis, :tampabay, :texas, :toronto, :washington  
+  # attr_accessible :title, :body
 end
