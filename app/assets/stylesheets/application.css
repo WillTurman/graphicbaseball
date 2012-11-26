@@ -11,3 +11,8 @@
  *= require_self
  *= require_tree .
  */
+.charttitle {
+	margin-left: 400px;
+	font-weight: normal;
+	color: #069;
+}
