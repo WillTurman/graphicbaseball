@@ -13,7 +13,10 @@ end
 
 group :production do
   gem 'pg', '0.12.2'
+  gem 'google-analytics-rails'
 end
+
+
 
 # Gems used only for assets and not required
 # in production environments by default.
