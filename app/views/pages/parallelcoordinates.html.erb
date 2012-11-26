@@ -54,7 +54,7 @@ visibility:hidden;
 <script src="d3/d3.v2.js"></script>
 <script src="d3/d3.parcoords.js"></script>
 <script src="d3/divgrid.js"></script>
-<div id="example" class="parcoords" style="height:300; margin-top:32px;"></div>
+<div id="example" class="parcoords" style="height:500px; margin-top:32px;"></div>
 <div id="grid"></div>
 <div id="pager"></div>
 <script id="brushing">
@@ -67,7 +67,7 @@ d3.csv('data/batting.csv', function(data) {
     .data(data)
     .alpha(0.4)
     .mode("queue") // progressive rendering
-    .height(d3.max([document.body.clientHeight-326, 220]))
+    .height(d3.max([document.body.clientHeight-297, 200]))
     .margin({
       top: 36,
       left: 0,
@@ -97,7 +97,7 @@ d3.csv('data/batting.csv', function(data) {
 
   var dataView = new Slick.Data.DataView();
   var grid = new Slick.Grid("#grid", dataView, columns, options);
-  var pager = new Slick.Controls.Pager(dataView, grid, $("#pager"));
+  //var pager = new Slick.Controls.Pager(dataView, grid, $("#pager"));
 
   // wire up model events to drive the grid
   dataView.onRowCountChanged.subscribe(function (e, args) {
