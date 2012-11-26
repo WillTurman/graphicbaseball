@@ -7,7 +7,9 @@ Graphicbaseball::Application.routes.draw do
   match '/mlb2009', to: 'pages#mlb2009'
   match '/mlb2008', to: 'pages#mlb2008'
 
-  match '/parallel', to: 'pages#parallelcoordinates'
+  match '/parallelbatters', to: 'pages#parallel2012batters'
+  match '/parallelpitchers', to: 'pages#parallel2012pitchers'
+
 
 
   match '/chart', to: 'pages#chart'
