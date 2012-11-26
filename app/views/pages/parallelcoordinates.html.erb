@@ -25,6 +25,10 @@ body, html {
   overflow: hidden;
   font-size: 12px;
 }
+.badge, .label {
+  font-weight: normal;
+}
+
 #grid, #pager {
   position: fixed;
   width: 100%;
@@ -42,11 +46,15 @@ body, html {
   font-weight: bold;
   color: #069;
 }
+footer
+{
+visibility:hidden;
+}
 </style>
 <script src="d3/d3.v2.js"></script>
 <script src="d3/d3.parcoords.js"></script>
 <script src="d3/divgrid.js"></script>
-<div id="example" class="parcoords" style="height:300;"></div>
+<div id="example" class="parcoords" style="height:300; margin-top:32px;"></div>
 <div id="grid"></div>
 <div id="pager"></div>
 <script id="brushing">
