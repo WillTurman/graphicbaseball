@@ -1,0 +1,44 @@
+require 'open-uri'
+require 'serialport'
+#opens MetaFilter user page
+
+mefi = open('http://www.metafilter.com/user/53052') {|f| f.read }
+
+
+
+mefi = mefi.gsub(/<\/?[^>]*>/, "")
+regex = /Favorited.by.others\:\s\d+/.match(mefi).to_s
+regex = regex.split
+favorites = regex.last
+
+
+
+
+port = "/dev/tty.usbserial-FTG9N13R"
+rate = 9600
+bits = 8
+stop = 1
+parity = SerialPort::NONE
+
+
+
+sp = SerialPort.new(port, rate, bits, stop, parity)
+
+sp.read_timeout = 1500
+
+sleep(3)
+
+sp.write(favorites)
+
+sp.close
+
+puts favorites
+
+
+
+
+
+
+
+
+
